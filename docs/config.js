@@ -1,8 +1,10 @@
-// Application flow: Step 1 = Form (email+phone+details) → Step 2 = Calendar (book slot)
+// Form → email via FormSubmit (no Google Form needed)
+// First submission: check inbox for FormSubmit activation link (one-time)
 window.SCC_CONFIG = {
-  GOOGLE_FORM_URL: "https://forms.google.com/", // SETUP-GOOGLE-FORM-CALENDAR.txt
-  GOOGLE_CALENDAR_URL: "https://calendar.google.com/", // Appointment schedule link
+  APPLY_FORM_EMAIL: "summercrewcyprus@gmail.com", // change to amitai3386@gmail.com if you prefer
+  GOOGLE_CALENDAR_EMBED: "", // optional: calendar booking page URL
+  GOOGLE_CALENDAR_URL: "https://calendar.google.com/",
   FACEBOOK_PAGE: "https://www.facebook.com/profile.php?id=61591410037417",
-  CONTACT_EMAIL: "summercrewcyprus@gmail.com", // temp until domain + card fixed
-  SITE_URL: "https://summer-crew-cyprus.web.app" // Firebase until custom domain
+  CONTACT_EMAIL: "summercrewcyprus@gmail.com",
+  SITE_URL: "https://summer-crew-cyprus.web.app"
 };

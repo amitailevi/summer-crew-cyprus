@@ -1,50 +1,24 @@
-SUMMER CREW CYPRUS — מצב עכשיו (2 ביולי 2026)
-================================================
+SUMMER CREW CYPRUS — מצב 2 ביולי 2026
+========================================
 
-חלוקת עבודה:
-  Cursor  → מכין טקסטים + תמונות בתיקייה הזו
-  Cowork  → מעלה לפייסבוק לפי PASTE-THIS-IN-COWORK.txt
-  אמיתי   → רק אם Cowork נתקע בהעלאת תמונה (גרור קובץ מהתיקייה)
+עכשיו:
+  ✅ אתר — עיצוב חדש (נקי, צעיר, Coca-Cola energy)
+  ✅ GitHub — https://github.com/amitailevi/summer-crew-cyprus
+  ✅ Gmail — summercrewcyprus@gmail.com
+  ✅ חומרים — MARKETING-INDEX.txt
 
-עצור לעכשיו:
-  ❌ דומיין
-  ❌ מייל רשמי (hello@...)
-  ❌ SIM קפריסי +357
-  ❌ מודעות בתשלום
+מחר:
+  ⏳ דומיין summercrewcyprus.com + hello@ (אשראי)
+  ⏳ SIM +357
 
-במקום:
-  📧 summercrewcyprus@gmail.com (לפתוח ב-Gmail — חינם)
-  🌐 https://summer-crew-cyprus.web.app
+היום (כשאמיתי אומר GO):
+  🚀 מודעות פייסבוק
 
-================================================
-מה כבר בוצע בפייסבוק
-================================================
-✅ לוגו
-✅ קטגוריה Education
-✅ ביו באנגלית
-✅ פוסט 1 (טקסט)
-✅ פוסט 3 (education crew)
-✅ כיסוי (אם מוצג Learn. Lead. Earn. — סבבה)
+Cowork עכשיו:
+  → commands/PASTE-FB-MASTER-2026.txt
 
-================================================
-מה Cowork צריך לסיים
-================================================
-⬜ מחק 3 פוסטים ריקים ("ללא תוכן טקסט")
-⬜ פרטי קשר (gmail + לינק לאתר)  ← gmail מוכן!
-⬜ פוסט 1 — תמונה + הצמדה + תיקון טקסט
-⬜ פרסם פוסט 2, 4, 5
-⬜ תשובה שמורה Messenger — APPLY
-⬜ Gmail: חתימה + עדכון קשר בפייסבוק (PASTE-02)
+GitHub push (אחרי שינויים):
+  cd /Users/levi/cyprus-recruitment && git add -A && git commit -m "..." && git push
 
-================================================
-תמונות (לגרירה אם Cowork נתקע)
-================================================
-Desktop/Summer-Crew-Cyprus-COWORK/images/
-  cover-with-logo-slogan.png  → קאבר
-  logo-summer-crew-cyprus.png → לוגו (כבר עלה)
-  post-ad-youth-fun.png       → תמונה לפוסט 1
-
-================================================
-מה להדביק ל-Cowork
-================================================
-העתק את כל הקובץ: PASTE-THIS-IN-COWORK.txt
+Firebase (אחרי שינוי אתר):
+  npx firebase deploy --only hosting

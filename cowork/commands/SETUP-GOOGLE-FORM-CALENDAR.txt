@@ -1,63 +1,44 @@
-GOOGLE FORM + CALENDAR — setup for Amitai or Cowork
-====================================================
+GOOGLE FORM + CALENDAR — embedded ON the website
+=================================================
 
-GOAL (one clear flow):
-  Step 1 → Form: name, email, PHONE, age, English, Cyprus duration
-  Step 2 → Calendar: candidate picks interview slot themselves
+Login: summercrewcyprus@gmail.com
 
-After Form submit → confirmation page shows Calendar link (auto redirect).
+PART 1 — Google Form (embedded in site Step 1)
+----------------------------------------------
+1. https://forms.google.com → New form
+2. Title: Summer Crew Cyprus — Apply
 
-────────────────────────────────────────
-PART 1 — Google Form
-────────────────────────────────────────
-1. Log in as: summercrewcyprus@gmail.com
-2. https://forms.google.com → Blank form
-3. Title: Summer Crew Cyprus — Apply
-4. Description: Paid summer work · Training first · Limassol · Ages 16–21
-
-FIELDS (all required except notes):
+FIELDS (required unless noted):
   • Full name (short answer)
-  • Email (short answer — validate email)
-  • Phone / WhatsApp (short answer)
-  • Age (number or dropdown 16–21)
-  • English level (multiple choice: Basic / Good / Fluent)
+  • Passport number (short answer)
+  • Birth year (short answer or dropdown)
+  • Parents address (short answer)
+  • Mobile / WhatsApp (short answer)
+  • Email (short answer)
+  • English level (multiple choice)
   • How long in Cyprus? (short answer)
-  • Anything we should know? (paragraph — optional)
 
-5. Settings → Collect email addresses: ON
-6. Responses → Link to Google Sheet
+3. Responses → Link to Google Sheet
+4. Send → Embed HTML → copy iframe src URL
+   Looks like: https://docs.google.com/forms/d/e/XXXXX/viewform?embedded=true
+5. Paste into docs/config.js → GOOGLE_FORM_EMBED
+6. firebase deploy --only hosting
 
-CONFIRMATION MESSAGE (after submit):
-  Copy-paste:
+PART 2 — Google Calendar Appointments (embedded Step 2)
+-------------------------------------------------------
+1. https://calendar.google.com → Create → Appointment schedule
+2. Name: Summer Crew Cyprus — Interview
+3. Duration: 20 min
+4. Hours: Wed + Thu, 14:00–18:00
+5. Copy the public booking page URL
+6. Paste into docs/config.js → GOOGLE_CALENDAR_EMBED
+7. firebase deploy
 
-  Thanks! Step 1 done ✓
-  Now book your interview (Step 2):
-  [PASTE GOOGLE CALENDAR APPOINTMENT LINK HERE]
-  Wed & Thu · 14:00–18:00 · 20 min · Limassol
+Note: Taken slots disappear automatically — others only see open times.
 
-7. Copy form URL → paste in:
-   /Users/levi/cyprus-recruitment/docs/config.js → GOOGLE_FORM_URL
+PART 3 — Form confirmation (optional)
+-------------------------------------
+After submit message:
+  "Thanks! Scroll down on the same page to book your interview slot."
 
-────────────────────────────────────────
-PART 2 — Google Calendar Appointments
-────────────────────────────────────────
-1. https://calendar.google.com (same account)
-2. Create → Appointment schedule
-3. Name: Summer Crew Cyprus — Interview
-4. Duration: 20 minutes
-5. Available: Wednesday + Thursday, 14:00–18:00
-6. Location: Limassol (or video link if needed)
-7. Copy booking page URL → config.js → GOOGLE_CALENDAR_URL
-8. Paste SAME link in Form confirmation message (above)
-
-────────────────────────────────────────
-PART 3 — Deploy site
-────────────────────────────────────────
-cd /Users/levi/cyprus-recruitment
-npx firebase deploy --only hosting
-
-Site flow: https://summer-crew-cyprus.web.app#apply
-  Step 1 button → Form
-  Step 2 button → Calendar (after submit)
-
-DONE when both URLs in config.js are real (not forms.google.com placeholder).
+DO NOT use external link buttons — everything embedded on site.

@@ -256,7 +256,67 @@
       letter-spacing: .1em;
     }
 
-    footer {
+    .embed-box {
+      background: #fff;
+      border: 2px solid #f1f5f9;
+      border-radius: 1rem;
+      overflow: hidden;
+      min-height: 480px;
+    }
+    .embed-box iframe {
+      width: 100%;
+      border: none;
+      min-height: 520px;
+      display: block;
+    }
+    .embed-placeholder {
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: .9rem;
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .embed-placeholder strong { color: var(--ink); display: block; margin-bottom: .5rem; }
+
+    .apply-form { padding: .5rem 0 0; }
+    .apply-form label {
+      display: block;
+      font-size: .75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--muted);
+      margin-bottom: .35rem;
+      margin-top: 1rem;
+    }
+    .apply-form label:first-child { margin-top: 0; }
+    .apply-form input, .apply-form textarea {
+      width: 100%;
+      padding: .85rem 1rem;
+      font: inherit;
+      font-size: 1rem;
+      border: 2px solid #e2e8f0;
+      border-radius: .5rem;
+      background: #fff;
+    }
+    .apply-form input:focus, .apply-form textarea:focus {
+      outline: none;
+      border-color: var(--ocean);
+    }
+    .apply-form .btn { width: 100%; margin-top: 1.25rem; }
+    .form-ok {
+      background: #ecfdf5;
+      border: 2px solid #6ee7b7;
+      color: #065f46;
+      padding: 1rem;
+      border-radius: .5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
       text-align: center;
       padding: 2rem 1.25rem 2.5rem;
       font-size: .8rem;
@@ -329,17 +389,52 @@
       <div class="step-card">
         <div class="step-num">01</div>
         <h3>Your details</h3>
-        <p>Name · email · phone · age · English · how long in Cyprus</p>
-        <a class="btn btn-primary" id="apply-btn" href="#" target="_blank" rel="noopener">Open form →</a>
+        <p>Fill in below — we get it by email instantly.</p>
+        <div id="form-sent-msg" class="form-ok" hidden>✓ Sent! Now pick your interview time below ↓</div>
+        <form class="apply-form" id="apply-form" method="POST">
+          <input type="hidden" name="_subject" value="New application — Summer Crew Cyprus" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+          <input type="hidden" name="_next" id="form-next-url" value="" />
+
+          <label for="full_name">Full name</label>
+          <input type="text" id="full_name" name="full_name" required autocomplete="name" />
+
+          <label for="passport">Passport number</label>
+          <input type="text" id="passport" name="passport" required />
+
+          <label for="birth_year">Birth year</label>
+          <input type="number" id="birth_year" name="birth_year" min="1998" max="2010" required placeholder="e.g. 2006" />
+
+          <label for="parents_address">Parents address</label>
+          <input type="text" id="parents_address" name="parents_address" required />
+
+          <label for="mobile">Mobile / WhatsApp</label>
+          <input type="tel" id="mobile" name="mobile" required autocomplete="tel" />
+
+          <label for="email">Your email</label>
+          <input type="email" id="email" name="email" required autocomplete="email" />
+
+          <button type="submit" class="btn btn-primary">Send application →</button>
+        </form>
       </div>
 
-      <p class="arrow-down">↓ then ↓</p>
+      <p class="arrow-down">↓ after you submit ↑</p>
 
-      <div class="step-card step-2">
+      <div class="step-card step-2" id="book">
         <div class="step-num">02</div>
         <h3>Pick interview time</h3>
-        <p>Wed & Thu · 14:00–18:00 · 20 min · Limassol · you choose the slot</p>
-        <a class="btn btn-primary" id="calendar-btn" href="#" target="_blank" rel="noopener">Book slot →</a>
+        <p>Wed & Thu · 14:00–18:00 · 20 min · Limassol · taken slots close automatically</p>
+        <div class="embed-box" id="calendar-embed-wrap">
+          <div class="embed-placeholder" id="calendar-placeholder">
+            <div>
+              <strong>Calendar loading soon</strong>
+              You'll see open slots only — booked times disappear for everyone
+            </div>
+          </div>
+          <iframe id="calendar-embed" title="Book interview" hidden></iframe>
+        </div>
       </div>
     </div>
   </div>
@@ -355,14 +450,31 @@
   <script>
     if (window.SCC_CONFIG) {
       const c = window.SCC_CONFIG;
-      document.getElementById('apply-btn').href = c.GOOGLE_FORM_URL;
-      document.getElementById('calendar-btn').href = c.GOOGLE_CALENDAR_URL;
       document.getElementById('fb-footer').href = c.FACEBOOK_PAGE;
       document.querySelector('.btn-secondary').href = c.FACEBOOK_PAGE;
       document.getElementById('email-footer').href = 'mailto:' + c.CONTACT_EMAIL;
       document.getElementById('email-footer').textContent = c.CONTACT_EMAIL;
       document.getElementById('site-footer').href = c.SITE_URL;
       document.getElementById('site-footer').textContent = c.SITE_URL.replace('https://', '');
+
+      const toEmail = c.APPLY_FORM_EMAIL || c.CONTACT_EMAIL;
+      const form = document.getElementById('apply-form');
+      form.action = 'https://formsubmit.co/' + encodeURIComponent(toEmail);
+      document.getElementById('form-next-url').value = c.SITE_URL + '?sent=1#book';
+
+      if (new URLSearchParams(location.search).get('sent') === '1') {
+        document.getElementById('form-sent-msg').hidden = false;
+        document.getElementById('book').scrollIntoView({ behavior: 'smooth' });
+      }
+
+      const calUrl = c.GOOGLE_CALENDAR_EMBED || c.GOOGLE_CALENDAR_URL;
+      if (calUrl && calUrl !== 'https://calendar.google.com/') {
+        const iframe = document.getElementById('calendar-embed');
+        const placeholder = document.getElementById('calendar-placeholder');
+        iframe.src = calUrl;
+        iframe.hidden = false;
+        placeholder.hidden = true;
+      }
     }
   </script>
 </body>

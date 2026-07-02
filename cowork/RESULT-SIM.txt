@@ -1,0 +1,17 @@
+Provider: Numero eSIM
+Number: +447412815776
+Type: UK Mobile (virtual, via Numero app)
+Plan: €4.99/month (recurring — cancel anytime)
+SMS: Via Numero app
+Calls: Via Numero app
+WhatsApp: Compatible — verify with this number
+Login: https://www.numeroesim.com (summercrewcyprus@gmail.com)
+App: Numero eSIM (App Store / Google Play)
+Date: 2026-07-02
+
+Notes:
+- Not a physical SIM or eSIM — virtual number in app
+- Requires Numero app to receive SMS/calls
+- After WhatsApp verification, app can stay in background
+- Israeli credit card worked on second attempt
+- Number reserved for Summer Crew Cyprus project
