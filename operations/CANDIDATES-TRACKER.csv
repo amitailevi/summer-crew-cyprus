@@ -1,0 +1,4 @@
+id,date_applied,source,full_name,phone,email,age,english_level,available_june_sep,interview_date,interview_time,status,notes
+1,2026-07-01,facebook_lead,,,,,,,pending,,new,
+2,2026-07-01,messenger,,,,,,,pending,,new,
+3,2026-07-01,instagram,,,,,,,pending,,new,
