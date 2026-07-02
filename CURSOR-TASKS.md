@@ -15,25 +15,14 @@ Paste in Cowork: `/Users/levi/Desktop/Summer-Crew-Cyprus-COWORK/FB-ONLY-NO-DOMAI
 ## Firebase (done)
 - https://summer-crew-cyprus.web.app
 
-## GitHub (עכשיו — לא עלה עדיין)
-פרויקט **לא** קיים ב-GitHub. `gh auth` פג תוקף.
+## GitHub ✅
+**Live:** https://github.com/amitailevi/summer-crew-cyprus  
+Branch: `main` · 46 files · commit `2a483eb`
 
-הרץ בטרמינל (או הדבק ל-Cowork אם יכול):
-```
-commands/GITHUB-SETUP.txt
-```
-
-בקצרה:
+Push updates:
 ```bash
-gh auth refresh -h github.com
-cd /Users/levi/cyprus-recruitment
-git init -b main
-git add -A
-git commit -m "Summer Crew Cyprus — site, Firebase, docs"
-gh repo create summer-crew-cyprus --public --source=. --remote=origin --push
+cd /Users/levi/cyprus-recruitment && git add -A && git commit -m "..." && git push
 ```
-
-Repo: `https://github.com/amitailevi/summer-crew-cyprus`
 
 ## Cowork handles NOW
 - Facebook page fixes + posts 2,4,5 + contact + messenger reply
