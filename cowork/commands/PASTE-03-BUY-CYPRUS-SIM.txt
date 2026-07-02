@@ -1,0 +1,118 @@
+TASK: Buy Cyprus virtual phone number (+357) for Summer Crew Cyprus Facebook page.
+
+PROJECT: Summer Crew Cyprus — Limassol hotel training crew
+FACEBOOK PAGE: https://www.facebook.com/profile.php?id=61591410037417
+
+PURPOSE:
+- Display on Facebook contact: +357 number
+- Receive SMS if needed for verification
+- Professional local number for applicants
+
+BUDGET: ~$3–15/month (cheapest plan with SMS if possible)
+
+STOP RULES:
+- When payment / credit card screen appears → STOP immediately
+- Tell Amitai: "Payment needed — please enter card details yourself"
+- After Amitai pays → continue from where you stopped
+- Do NOT buy Israeli number
+- Do NOT start Facebook ads
+
+═══════════════════════════════════════════════════════
+STEP S1 — Choose provider (try in order)
+═══════════════════════════════════════════════════════
+
+Option A: https://didhub.io/buy/cyprus
+Option B: https://callhippo.com/cyprus-virtual-phone-number/
+Option C: https://www.zadarma.com/en/tariffs/numbers/cyprus/
+
+Open Option A first. If blocked or too expensive → try B, then C.
+
+Requirements:
+- Country: Cyprus (+357)
+- Area: 25 (Limassol) if available
+- Must receive SMS (for FB verification if needed)
+- Monthly plan OK
+
+Say: "STEP S1 DONE — provider: [name]"
+
+═══════════════════════════════════════════════════════
+STEP S2 — Sign up / log in
+═══════════════════════════════════════════════════════
+Use project email if exists: summercrewcyprus@gmail.com
+If Gmail not created yet → use amitai3386@gmail.com
+
+Complete signup.
+Say: "STEP S2 DONE"
+
+═══════════════════════════════════════════════════════
+STEP S3 — Select number
+═══════════════════════════════════════════════════════
+Pick Cyprus (+357) number.
+Prefer Limassol (25) prefix.
+Choose cheapest plan that includes:
+- Incoming calls OR SMS
+- At least 1 month
+
+Write down full number: +357 __ ______
+
+STOP before payment → ask Amitai to pay.
+After payment confirmed → continue.
+
+Say: "STEP S3 DONE — number: +357..."
+
+═══════════════════════════════════════════════════════
+STEP S4 — Test number
+═══════════════════════════════════════════════════════
+In provider dashboard:
+- Confirm number is Active
+- Note how to read SMS (dashboard / app)
+- Send test SMS to amitai3386@gmail.com with the number details if possible
+
+Say: "STEP S4 DONE"
+
+═══════════════════════════════════════════════════════
+STEP S5 — Save result to file
+═══════════════════════════════════════════════════════
+Create file:
+/Users/levi/Desktop/Summer-Crew-Cyprus-COWORK/RESULT-SIM.txt
+
+Content:
+  Provider: [name]
+  Number: +357 __ ______
+  Plan: [monthly cost]
+  SMS: [how to read]
+  Login: [dashboard URL]
+  Date: [today]
+
+Say: "STEP S5 DONE"
+
+═══════════════════════════════════════════════════════
+STEP S6 — Add to Facebook contact
+═══════════════════════════════════════════════════════
+Page: https://www.facebook.com/profile.php?id=61591410037417
+About → Edit contact details:
+  Phone: +357 [full number]
+  Email: summercrewcyprus@gmail.com (or current project email)
+  Website: https://summer-crew-cyprus.web.app
+Save.
+
+Screenshot contact section.
+Say: "STEP S6 DONE"
+
+═══════════════════════════════════════════════════════
+STEP S7 — Optional: WhatsApp Business check
+═══════════════════════════════════════════════════════
+Check if number can register WhatsApp Business.
+If verification SMS needed → use provider SMS inbox.
+If blocked → note in RESULT-SIM.txt and skip.
+
+Say: "STEP S7 DONE" or "STEP S7 SKIPPED"
+
+FINAL:
+Say: "ALL DONE — Cyprus SIM live: +357..."
+Screenshot: provider dashboard + Facebook contact page.
+
+DO NOT:
+- Port Israeli numbers
+- Buy physical SIM unless virtual fails
+- Start paid Facebook ads

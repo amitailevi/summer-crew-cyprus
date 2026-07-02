@@ -1,0 +1,44 @@
+GITHUB — Summer Crew Cyprus
+============================
+
+Repo name: summer-crew-cyprus
+Local path: /Users/levi/cyprus-recruitment
+
+STATUS: Git initialized locally. GitHub push needs auth refresh.
+
+────────────────────────────────────────
+STEP 1 — YOU (terminal, one time)
+────────────────────────────────────────
+gh auth refresh -h github.com
+
+(Follow browser login if asked)
+
+────────────────────────────────────────
+STEP 2 — CREATE REPO + PUSH
+────────────────────────────────────────
+cd /Users/levi/cyprus-recruitment
+
+git add -A
+git commit -m "$(cat <<'EOF'
+Summer Crew Cyprus — site, Firebase, docs, apply flow
+
+EOF
+)"
+
+gh repo create summer-crew-cyprus --public --source=. --remote=origin --push
+
+────────────────────────────────────────
+IF REPO ALREADY EXISTS — update only
+────────────────────────────────────────
+cd /Users/levi/cyprus-recruitment
+git remote add origin https://github.com/amitailevi/summer-crew-cyprus.git 2>/dev/null || true
+git push -u origin main
+
+(or: git push -u origin master — check branch name with git branch)
+
+────────────────────────────────────────
+RESULT
+────────────────────────────────────────
+https://github.com/amitailevi/summer-crew-cyprus
+
+Code only — site stays on Firebase, not GitHub Pages.

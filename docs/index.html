@@ -4,396 +4,353 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Summer Crew Cyprus — Learn. Lead. Earn.</title>
-  <meta name="description" content="Education & training for young people 16–21 in Cyprus. Hotel entertainment. 3-day training. Limassol." />
+  <meta name="description" content="Paid summer work in Limassol. Ages 16–21. Training first. Hotel crew." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
   <style>
     :root {
       --ocean: #0ea5e9;
       --sun: #fbbf24;
       --coral: #fb7185;
-      --dark: #0f172a;
-      --light: #f0f9ff;
+      --red: #e11d48;
+      --ink: #0f172a;
+      --muted: #64748b;
+      --white: #ffffff;
+      --gap: clamp(2rem, 6vw, 4.5rem);
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
     body {
-      font-family: 'Inter', system-ui, sans-serif;
-      color: var(--dark);
-      background: #fff;
-      line-height: 1.55;
+      font-family: 'DM Sans', system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
     }
-    img { display: block; max-width: 100%; }
+    img { display: block; max-width: 100%; height: auto; }
 
-    /* Facebook-style responsive cover */
-    .page-cover {
-      width: 100%;
-      max-width: 1200px;
+    .wrap {
+      max-width: 680px;
       margin: 0 auto;
-      background: #0c4a6e;
-    }
-    .cover-frame {
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-      /* Desktop: FB cover ratio ~820×312 */
-      aspect-ratio: 820 / 312;
-    }
-    .cover-frame img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: left center;
-    }
-    @media (max-width: 768px) {
-      .cover-frame {
-        /* Mobile: taller crop like FB mobile cover */
-        aspect-ratio: 16 / 10;
-      }
-      .cover-frame img {
-        object-position: 28% center;
-      }
-    }
-    @media (max-width: 480px) {
-      .cover-frame {
-        aspect-ratio: 4 / 3;
-      }
-      .cover-frame img {
-        object-position: 22% center;
-      }
+      padding: 0 1.25rem;
     }
 
-    .profile-bar {
-      position: relative;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 1.25rem 1.5rem;
-      background: #fff;
+    /* —— NAV —— */
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid #f1f5f9;
     }
-    .profile-bar .logo-wrap {
-      margin-top: -2.75rem;
-      margin-bottom: .75rem;
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: .65rem;
+      text-decoration: none;
+      color: var(--ink);
     }
-    .profile-bar .logo-wrap img {
-      width: clamp(72px, 18vw, 112px);
-      height: clamp(72px, 18vw, 112px);
+    .nav-logo img {
+      width: 44px;
+      height: 44px;
       border-radius: 50%;
-      border: 4px solid #fff;
-      box-shadow: 0 4px 16px rgba(15,23,42,.12);
     }
-    .profile-bar h1 {
-      font-family: 'Poppins', sans-serif;
-      font-size: clamp(1.35rem, 4vw, 1.75rem);
-      font-weight: 800;
-      color: var(--dark);
-      margin-bottom: .15rem;
+    .nav-logo span {
+      font-weight: 700;
+      font-size: .95rem;
+      letter-spacing: -.02em;
     }
-    .profile-bar .category {
-      font-size: .9rem;
-      color: #64748b;
-      margin-bottom: 1rem;
+    .nav-cta {
+      font-size: .8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--coral);
+      text-decoration: none;
     }
 
-    .hero-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 1.25rem 2rem;
-      background: #fff;
+    /* —— HERO —— */
+    .hero {
+      padding: var(--gap) 0 calc(var(--gap) * .6);
+      text-align: center;
     }
-    .hero-content h2 {
-      font-family: 'Poppins', sans-serif;
-      font-size: clamp(1.5rem, 5vw, 2rem);
-      font-weight: 800;
-      line-height: 1.15;
-      margin-bottom: .6rem;
-      color: var(--dark);
-    }
-    .hero-content p {
-      font-size: 1.05rem;
-      color: #475569;
+    .hero-tag {
+      display: inline-block;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--ocean);
+      background: #f0f9ff;
+      padding: .4rem .85rem;
+      border-radius: 999px;
       margin-bottom: 1.25rem;
-      max-width: 520px;
+    }
+    .hero h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3.2rem, 14vw, 5.5rem);
+      line-height: .92;
+      letter-spacing: .02em;
+      margin-bottom: .5rem;
+    }
+    .hero h1 .line-ocean { color: var(--ocean); }
+    .hero h1 .line-coral { color: var(--coral); }
+    .hero h1 .line-sun { color: var(--sun); }
+    .hero-lead {
+      font-size: clamp(1.05rem, 3.5vw, 1.25rem);
+      color: var(--muted);
+      max-width: 28ch;
+      margin: 1rem auto 1.75rem;
+      font-weight: 600;
+    }
+    .hero-img {
+      border-radius: 1.25rem;
+      overflow: hidden;
+      margin: 2rem 0 0;
+      box-shadow: 0 24px 48px rgba(15,23,42,.08);
+    }
+    .hero-img img { width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+
+    /* —— BUTTONS —— */
+    .btn-row {
+      display: flex;
+      flex-direction: column;
+      gap: .75rem;
+      align-items: stretch;
+    }
+    @media (min-width: 420px) {
+      .btn-row { flex-direction: row; justify-content: center; }
     }
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: .4rem;
-      background: var(--coral);
-      color: #fff;
+      gap: .35rem;
+      font-family: 'DM Sans', sans-serif;
       font-weight: 700;
       font-size: 1rem;
-      padding: .95rem 1.6rem;
-      border-radius: 999px;
       text-decoration: none;
       border: none;
       cursor: pointer;
-      box-shadow: 0 8px 28px rgba(251,113,133,.4);
+      padding: 1rem 1.75rem;
+      border-radius: .5rem;
+      transition: transform .15s, box-shadow .15s;
     }
-    .btn-secondary {
-      background: transparent;
-      border: 2px solid var(--ocean);
-      color: var(--ocean);
-      box-shadow: none;
-      margin-top: .65rem;
-      margin-left: 0;
+    .btn:active { transform: scale(.98); }
+    .btn-primary {
+      background: var(--coral);
+      color: #fff;
+      box-shadow: 0 6px 0 #be123c, 0 10px 24px rgba(251,113,133,.35);
+      text-transform: uppercase;
+      letter-spacing: .04em;
     }
-    @media (min-width: 480px) {
-      .btn-secondary { margin-left: .5rem; margin-top: 0; }
+    .btn-primary:hover { box-shadow: 0 4px 0 #be123c, 0 8px 20px rgba(251,113,133,.4); }
+    .btn-ghost {
+      background: #fff;
+      color: var(--ink);
+      border: 2px solid #e2e8f0;
+      box-shadow: 0 4px 0 #e2e8f0;
     }
-  .gallery {
+
+    /* —— STATS STRIP —— */
+    .stats {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: .5rem;
-      padding: 1rem;
-      max-width: 720px;
-      margin: 0 auto;
-    }
-    .gallery img {
-      width: 100%;
-      aspect-ratio: 1;
-      object-fit: cover;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: #e2e8f0;
       border-radius: 1rem;
+      overflow: hidden;
+      margin: var(--gap) 0;
     }
-    .gallery .wide {
-      grid-column: 1 / -1;
-      aspect-ratio: 16/9;
-    }
-    .strip {
+    .stat {
+      background: #fff;
+      padding: 1.25rem .75rem;
       text-align: center;
-      padding: 2rem 1.25rem;
-      max-width: 560px;
-      margin: 0 auto;
     }
-    .strip h2 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.45rem;
+    .stat strong {
+      display: block;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.75rem;
+      color: var(--ocean);
+      line-height: 1;
+    }
+    .stat span {
+      font-size: .72rem;
+      color: var(--muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+
+    /* —— SECTIONS —— */
+    section { padding: calc(var(--gap) * .75) 0; }
+    .section-label {
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--coral);
       margin-bottom: .5rem;
     }
-    .strip p { color: #64748b; font-size: .98rem; }
-    .pills {
+    h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2rem, 8vw, 2.75rem);
+      letter-spacing: .03em;
+      line-height: 1;
+      margin-bottom: .75rem;
+    }
+    .section-p {
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 42ch;
+    }
+    .chips {
       display: flex;
       flex-wrap: wrap;
       gap: .5rem;
-      justify-content: center;
-      margin-top: 1rem;
+      margin-top: 1.25rem;
     }
-    .pill {
-      background: var(--light);
-      color: var(--dark);
-      padding: .4rem .85rem;
+    .chip {
+      font-size: .8rem;
+      font-weight: 700;
+      padding: .45rem .9rem;
       border-radius: 999px;
-      font-size: .85rem;
-      font-weight: 600;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
     }
-    .form-wrap {
-      background: linear-gradient(180deg, var(--light), #fff);
-      padding: 2rem 1.25rem 3rem;
+
+    /* —— APPLY —— */
+    .apply-zone {
+      background: #fafafa;
+      border-top: 1px solid #f1f5f9;
+      padding: var(--gap) 0;
     }
-    .form-card {
-      max-width: 480px;
-      margin: 0 auto;
+    .step-card {
       background: #fff;
-      border-radius: 1.25rem;
+      border: 2px solid #f1f5f9;
+      border-radius: 1rem;
       padding: 1.5rem;
-      box-shadow: 0 8px 32px rgba(14,165,233,.12);
+      margin-bottom: 1rem;
     }
-    .form-card h2 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.35rem;
+    .step-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.5rem;
+      color: #e2e8f0;
+      line-height: 1;
       margin-bottom: .25rem;
     }
-    .form-card .sub {
-      color: #64748b;
-      font-size: .9rem;
-      margin-bottom: 1.25rem;
-    }
-    label {
-      display: block;
-      font-size: .8rem;
-      font-weight: 600;
-      margin-bottom: .3rem;
-      color: #475569;
-    }
-    input, select, textarea {
-      width: 100%;
-      padding: .7rem .85rem;
-      border: 1.5px solid #e2e8f0;
-      border-radius: .65rem;
-      font: inherit;
-      margin-bottom: .9rem;
-      background: #fff;
-    }
-    input:focus, select:focus, textarea:focus {
-      outline: none;
-      border-color: var(--ocean);
-    }
-    .submit { width: 100%; margin-top: .25rem; }
-    .fine {
-      font-size: .75rem;
-      color: #94a3b8;
-      text-align: center;
-      margin-top: .75rem;
-    }
-    .calendar-box {
-      max-width: 480px;
-      margin: 1.5rem auto 0;
-      text-align: center;
-      padding: 1.25rem;
-      background: #f8fafc;
-      border-radius: 1rem;
-      border: 2px dashed #cbd5e1;
-    }
-    .calendar-box.is-ready {
-      background: #fff;
-      border-color: var(--ocean);
-    }
-    .calendar-box a { color: var(--ocean); font-weight: 700; }
-    .apply-flow-title {
-      text-align: center;
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.1rem;
-      color: var(--dark);
-      margin-bottom: 1.25rem;
-    }
-    .step-badge {
-      display: inline-block;
-      background: var(--ocean);
-      color: #fff;
-      font-size: .7rem;
+    .step-card h3 {
+      font-size: 1.15rem;
       font-weight: 700;
-      letter-spacing: .04em;
-      text-transform: uppercase;
-      padding: .25rem .6rem;
-      border-radius: 999px;
-      margin-bottom: .5rem;
+      margin-bottom: .35rem;
     }
-    .step-badge.step-2 { background: #94a3b8; }
-    .step-badge.step-2.active { background: var(--coral); }
-    .flow-arrow {
+    .step-card p { font-size: .9rem; color: var(--muted); margin-bottom: 1rem; }
+    .step-card .btn { width: 100%; }
+    .step-card.step-2 { border-color: #bae6fd; background: #f0f9ff; }
+    .arrow-down {
       text-align: center;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.25rem;
       color: var(--ocean);
-      font-size: 1.5rem;
-      margin: .75rem 0;
-      font-weight: 700;
+      margin: .5rem 0 1rem;
+      letter-spacing: .1em;
     }
-    .field-list {
-      list-style: none;
-      margin: 0 0 1rem;
-      padding: 0;
-      font-size: .85rem;
-      color: #64748b;
-    }
-    .field-list li { padding: .2rem 0; }
-    .field-list li::before { content: "✓ "; color: var(--ocean); font-weight: 700; }
+
     footer {
       text-align: center;
-      padding: 1.5rem;
+      padding: 2rem 1.25rem 2.5rem;
       font-size: .8rem;
       color: #94a3b8;
+      border-top: 1px solid #f1f5f9;
     }
-    footer a { color: var(--ocean); }
+    footer a { color: var(--ocean); text-decoration: none; font-weight: 600; }
+    footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
 
-  <header>
-    <div class="page-cover">
-      <div class="cover-frame">
-        <img
-          src="assets/cover-with-logo-slogan.png"
-          alt="Summer Crew Cyprus — Learn. Lead. Earn."
-          width="1640"
-          height="624"
-          fetchpriority="high"
-        />
-      </div>
-    </div>
-    <div class="profile-bar">
-      <div class="logo-wrap">
-        <img src="assets/logo-summer-crew-cyprus.png" alt="Summer Crew Cyprus logo" width="112" height="112" />
-      </div>
-      <h1>Summer Crew Cyprus</h1>
-      <p class="category">Education · Limassol · Ages 16–21</p>
-    </div>
-    <div class="hero-content">
-      <h2>Hotel work by the sea.<br/>We train you first.</h2>
-      <p>Paid summer job — not a vacation. Education crew: 3-day training + mentor all season.</p>
-      <a class="btn" href="#apply">Apply now →</a>
-      <a class="btn btn-secondary" href="https://www.facebook.com/profile.php?id=61591410037417" target="_blank" rel="noopener" style="color:var(--ocean);border-color:var(--ocean);">Message us on Facebook</a>
-    </div>
-  </header>
-
-  <section class="gallery" aria-label="On the job">
-    <img class="wide" src="assets/post-ad-youth-fun.png" alt="Summer Crew Cyprus — youth training for hotel work" />
-    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400&q=80" alt="Music" loading="lazy" />
-    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&q=80" alt="Sports" loading="lazy" />
-  </section>
-
-  <section class="strip">
-    <h2>Education crew — not manpower</h2>
-    <p>We teach music, dance, sports & kids activities. Then you work in hotels — ready, not lost.</p>
-    <div class="pills">
-      <span class="pill">🎓 3-day training</span>
-      <span class="pill">🌊 Limassol</span>
-      <span class="pill">16–21</span>
-      <span class="pill">💬 Mentor all season</span>
-    </div>
-  </section>
-
-  <section class="strip">
-    <h2>Ready to work this summer?</h2>
-    <p>16–21 in Limassol? Paid hotel work with training first — apply if you're serious about the season.</p>
-  </section>
-
-  <section class="form-wrap" id="apply">
-    <p class="apply-flow-title">How to apply — 2 steps (in order)</p>
-
-    <div class="form-card">
-      <span class="step-badge">Step 1</span>
-      <h2>Tell us about you</h2>
-      <p class="sub">Fill the application form first — then book your interview below.</p>
-
-      <ul class="field-list">
-        <li>Full name</li>
-        <li>Email</li>
-        <li>Phone (WhatsApp OK)</li>
-        <li>Age (16–21)</li>
-        <li>English level</li>
-        <li>How long you're in Cyprus</li>
-      </ul>
-
-      <a class="btn submit" id="apply-btn" href="#" target="_blank" rel="noopener" style="text-decoration:none;">
-        Open application form →
+  <div class="wrap">
+    <nav class="nav">
+      <a class="nav-logo" href="#">
+        <img src="assets/logo-summer-crew-cyprus.png" alt="" width="44" height="44" />
+        <span>Summer Crew Cyprus</span>
       </a>
-      <p class="fine">Takes ~3 min · Required: email + phone</p>
+      <a class="nav-cta" href="#apply">Apply →</a>
+    </nav>
+
+    <header class="hero">
+      <span class="hero-tag">Limassol · Ages 16–21 · Paid work</span>
+      <h1>
+        <span class="line-ocean">LEARN.</span><br/>
+        <span class="line-coral">LEAD.</span><br/>
+        <span class="line-sun">EARN.</span>
+      </h1>
+      <p class="hero-lead">Summer job at the hotel. Training first. Mentor all season. Not a vacation — real work.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="#apply">Apply now</a>
+        <a class="btn btn-ghost btn-secondary" href="https://www.facebook.com/profile.php?id=61591410037417" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <div class="hero-img">
+        <img src="assets/cover-with-logo-slogan.png" alt="Summer Crew Cyprus team" width="1200" height="675" fetchpriority="high" />
+      </div>
+    </header>
+
+    <div class="stats" aria-label="Quick facts">
+      <div class="stat"><strong>3</strong><span>Days training</span></div>
+      <div class="stat"><strong>16–21</strong><span>Age range</span></div>
+      <div class="stat"><strong>💬</strong><span>Mentor season</span></div>
     </div>
 
-    <p class="flow-arrow" aria-hidden="true">↓ after you submit ↓</p>
+    <section>
+      <p class="section-label">The job</p>
+      <h2>WORK BY THE POOL.<br/>TRAINED FIRST.</h2>
+      <p class="section-p">Music, dance, sports, kids — we teach you before your first shift. Education crew, not a staffing agency.</p>
+      <div class="chips">
+        <span class="chip">🎵 Music</span>
+        <span class="chip">⚽ Sports</span>
+        <span class="chip">🧒 Kids</span>
+        <span class="chip">🏨 Hotels</span>
+      </div>
+    </section>
 
-    <div class="calendar-box" id="book">
-      <span class="step-badge step-2 active">Step 2</span>
-      <p><strong>Book your interview slot</strong></p>
-      <p style="margin-top:.5rem;font-size:.9rem;color:#64748b;">
-        Only after Step 1 — pick a time that works for you.<br/>
-        Wed & Thu · 14:00–18:00 · 20 min · Limassol
-      </p>
-      <p style="margin-top:.75rem;">
-        <a class="btn" id="calendar-btn" href="#" target="_blank" rel="noopener" style="display:inline-flex;font-size:.9rem;padding:.75rem 1.25rem;">
-          Book on Google Calendar →
-        </a>
-      </p>
-      <p class="fine" style="margin-top:.75rem;">You choose the slot — we confirm by email.</p>
+    <section>
+      <p class="section-label">Who we want</p>
+      <h2>READY TO SHOW UP?</h2>
+      <p class="section-p">16–21 in Cyprus. Want paid work + skills — not just killing time. English OK. No experience needed.</p>
+    </section>
+  </div>
+
+  <div class="apply-zone" id="apply">
+    <div class="wrap">
+      <p class="section-label">How to join</p>
+      <h2>TWO STEPS. IN ORDER.</h2>
+      <p class="section-p" style="margin-bottom:1.5rem;">Form first. Calendar second. ~5 minutes total.</p>
+
+      <div class="step-card">
+        <div class="step-num">01</div>
+        <h3>Your details</h3>
+        <p>Name · email · phone · age · English · how long in Cyprus</p>
+        <a class="btn btn-primary" id="apply-btn" href="#" target="_blank" rel="noopener">Open form →</a>
+      </div>
+
+      <p class="arrow-down">↓ then ↓</p>
+
+      <div class="step-card step-2">
+        <div class="step-num">02</div>
+        <h3>Pick interview time</h3>
+        <p>Wed & Thu · 14:00–18:00 · 20 min · Limassol · you choose the slot</p>
+        <a class="btn btn-primary" id="calendar-btn" href="#" target="_blank" rel="noopener">Book slot →</a>
+      </div>
     </div>
-  </section>
+  </div>
 
   <footer>
-    Summer Crew Cyprus · Education & Training · Limassol 2026<br/>
+    Summer Crew Cyprus · 2026<br/>
     <a id="email-footer" href="mailto:summercrewcyprus@gmail.com">summercrewcyprus@gmail.com</a>
-    ·
-    <a id="site-footer" href="https://summer-crew-cyprus.web.app">summer-crew-cyprus.web.app</a>
-    ·
-    <a id="fb-footer" href="https://www.facebook.com/profile.php?id=61591410037417" target="_blank" rel="noopener">Facebook</a>
+    · <a id="site-footer" href="https://summer-crew-cyprus.web.app">summer-crew-cyprus.web.app</a>
+    · <a id="fb-footer" href="https://www.facebook.com/profile.php?id=61591410037417" target="_blank" rel="noopener">Facebook</a>
   </footer>
+
   <script src="config.js"></script>
   <script>
     if (window.SCC_CONFIG) {

@@ -1,0 +1,96 @@
+TASK: Gmail for Summer Crew Cyprus — Amitai creates account MANUALLY first.
+
+⚠️ COWORK CANNOT:
+- Create Google accounts
+- Enter passwords
+- Complete SMS verification for Amitai
+
+✅ COWORK CAN (after account exists):
+- Update Facebook contact with the email
+- Send a test email from the new account (if Amitai is logged in)
+- Set Gmail signature
+- Set up forwarding to amitai3386@gmail.com
+- Write RESULT-GMAIL.txt
+
+═══════════════════════════════════════════════════════
+STEP 0 — AMITAI DOES THIS FIRST (2 minutes)
+═══════════════════════════════════════════════════════
+Tell Amitai to do NOW (you cannot do this):
+
+1. Open: https://accounts.google.com/signup
+2. Create:
+   First name: Summer Crew
+   Last name: Cyprus
+   Email: summercrewcyprus@gmail.com
+   (if taken: summercrewcyprus2026@gmail.com)
+3. Amitai types password himself
+4. Amitai completes SMS verification on his phone
+5. Recovery email: amitai3386@gmail.com
+
+When Amitai says "Gmail ready: [address]" → continue below.
+
+═══════════════════════════════════════════════════════
+STEP G1 — Verify inbox (Amitai must be logged in)
+═══════════════════════════════════════════════════════
+Ask Amitai to log into the new Gmail in browser.
+Open: https://mail.google.com
+Confirm inbox loads.
+Say: "STEP G1 DONE"
+
+═══════════════════════════════════════════════════════
+STEP G2 — Gmail signature (optional)
+═══════════════════════════════════════════════════════
+Gmail → Settings → See all settings → Signature:
+
+---
+Summer Crew Cyprus
+Learn. Lead. Earn.
+Paid summer work · Training first · Limassol
+summercrewcyprus@gmail.com
+https://summer-crew-cyprus.web.app
+---
+
+Save.
+Say: "STEP G2 DONE"
+
+═══════════════════════════════════════════════════════
+STEP G3 — Forwarding (optional)
+═══════════════════════════════════════════════════════
+Gmail → Settings → Forwarding → Add amitai3386@gmail.com
+Amitai must confirm forwarding link in his personal inbox.
+Say: "STEP G3 DONE" or "STEP G3 SKIPPED"
+
+═══════════════════════════════════════════════════════
+STEP G4 — Send test email
+═══════════════════════════════════════════════════════
+From new account → send to amitai3386@gmail.com
+Subject: Summer Crew Cyprus — project email live
+Body: This is the official project inbox.
+Say: "STEP G4 DONE"
+
+═══════════════════════════════════════════════════════
+STEP G5 — Save result file
+═══════════════════════════════════════════════════════
+Write:
+/Users/levi/Desktop/Summer-Crew-Cyprus-COWORK/RESULT-GMAIL.txt
+
+  Email: [final address]
+  Date: [today]
+  Recovery: amitai3386@gmail.com
+  Forwarding: amitai3386@gmail.com (yes/no)
+
+Say: "STEP G5 DONE"
+
+═══════════════════════════════════════════════════════
+STEP G6 — Update Facebook contact
+═══════════════════════════════════════════════════════
+Page: https://www.facebook.com/profile.php?id=61591410037417
+About → Edit contact:
+  Email: [new gmail]
+  Website: https://summer-crew-cyprus.web.app
+Save. Screenshot.
+Say: "STEP G6 DONE"
+
+FINAL: "ALL DONE — Gmail connected to Facebook: [address]"
+
+DO NOT attempt account signup or password entry.

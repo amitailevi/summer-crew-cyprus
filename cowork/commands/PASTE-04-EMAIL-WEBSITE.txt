@@ -1,0 +1,82 @@
+TASK: Add company email + website link to Facebook page AND verify on live website.
+
+PROJECT: Summer Crew Cyprus
+
+OFFICIAL EMAIL:
+summercrewcyprus@gmail.com
+
+OFFICIAL WEBSITE:
+https://summer-crew-cyprus.web.app
+
+FACEBOOK PAGE:
+https://www.facebook.com/profile.php?id=61591410037417
+
+FACEBOOK ABOUT:
+https://www.facebook.com/profile.php?id=61591410037417&sk=about
+
+RULES:
+- Do NOT create Gmail (already exists)
+- Do NOT touch Israeli Facebook pages
+- Do NOT start ads
+- After each step say "STEP X DONE"
+- Screenshot at end
+
+═══════════════════════════════════════════════════════
+STEP E1 — Facebook contact details
+═══════════════════════════════════════════════════════
+1. Open Facebook page → About / אודות
+2. Click "Edit contact details" / עריכת פרטים ליצירת קשר
+3. Set EXACTLY:
+   Email: summercrewcyprus@gmail.com
+   Website: https://summer-crew-cyprus.web.app
+   Phone: leave empty (unless +357 SIM already purchased)
+4. Save
+5. Refresh page → confirm email + website visible in contact section
+Say: "STEP E1 DONE"
+
+═══════════════════════════════════════════════════════
+STEP E2 — Facebook bio line (if contact block separate)
+═══════════════════════════════════════════════════════
+If there is a "Website" field on main About page (not just contact):
+Add: https://summer-crew-cyprus.web.app
+Save.
+Say: "STEP E2 DONE" or "STEP E2 SKIPPED"
+
+═══════════════════════════════════════════════════════
+STEP E3 — Link website on Facebook (optional button)
+═══════════════════════════════════════════════════════
+If page allows "Add website" or action button linking to external URL:
+URL: https://summer-crew-cyprus.web.app
+Label: Website / Visit website
+If not available → skip.
+Say: "STEP E3 DONE" or "STEP E3 SKIPPED"
+
+═══════════════════════════════════════════════════════
+STEP E4 — Verify live website shows email
+═══════════════════════════════════════════════════════
+1. Open: https://summer-crew-cyprus.web.app
+2. Scroll to footer
+3. Confirm visible:
+   - summercrewcyprus@gmail.com (clickable mailto)
+   - summer-crew-cyprus.web.app
+   - Facebook link
+4. If email NOT in footer → report to Amitai (site needs redeploy)
+Say: "STEP E4 DONE"
+
+═══════════════════════════════════════════════════════
+STEP E5 — Cross-check Facebook ↔ Website
+═══════════════════════════════════════════════════════
+Facebook contact email = summercrewcyprus@gmail.com
+Facebook website = https://summer-crew-cyprus.web.app
+Website footer email matches
+Website Facebook button opens:
+https://www.facebook.com/profile.php?id=61591410037417
+
+Screenshot: Facebook About + website footer side by side (or two screenshots).
+Say: "STEP E5 DONE"
+
+FINAL:
+Say: "ALL DONE — Email and website linked on Facebook and site."
+
+EMAIL: summercrewcyprus@gmail.com
+WEBSITE: https://summer-crew-cyprus.web.app

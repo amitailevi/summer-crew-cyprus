@@ -1,0 +1,172 @@
+TASK: Upload ALL ready Summer Crew Cyprus materials to Facebook — NOW.
+
+WORK FOLDER:
+/Users/levi/Desktop/Summer-Crew-Cyprus-COWORK/
+
+READ FIRST:
+/Users/levi/Desktop/Summer-Crew-Cyprus-COWORK/BRAND-VOICE.txt
+(Paid work + training — NEVER vacation/holiday/vacay)
+
+PAGE URL:
+https://www.facebook.com/profile.php?id=61591410037417
+
+CONTENT LIBRARY:
+https://www.facebook.com/professional_dashboard/content/content_library/
+
+TEXTS FOLDER:
+/Users/levi/Desktop/Summer-Crew-Cyprus-COWORK/texts/
+
+IMAGES FOLDER (primary):
+/Users/levi/Desktop/Summer-Crew-Cyprus-COWORK/images/
+
+MARKETING FOLDER (extra images):
+/Users/levi/Desktop/Summer-Crew-Cyprus-COWORK/marketing/
+
+RULES:
+- English only on public page
+- Post as page "Summer Crew Cyprus" — NOT personal profile
+- Do NOT touch Israeli Facebook pages
+- Do NOT start ads / boost / promote
+- Do NOT buy domain or SIM in this task
+- After EACH step say exactly: "STEP X DONE"
+- Final step: full-page screenshot
+
+CONTACT TO SET ON PAGE:
+- Email: summercrewcyprus@gmail.com
+- Website: https://summer-crew-cyprus.web.app
+- Phone: leave EMPTY (SIM is separate task)
+
+═══════════════════════════════════════════════════════
+FILE MAP — what goes where
+═══════════════════════════════════════════════════════
+
+COVER (Facebook header):
+  images/cover-with-logo-slogan.png
+  backup: marketing/covers/01-cover-learn-lead-earn.png
+
+PROFILE LOGO:
+  images/logo-summer-crew-cyprus.png
+
+POST 1 image:
+  images/post-ad-youth-fun.png
+  alt: marketing/posts/01-post-youth-fun.png
+
+POST 2 image (optional):
+  marketing/posts/02-post-real-talk.png
+
+POST 3 image (optional, if post missing):
+  marketing/posts/03-post-education-crew.png
+
+POST 4 image (optional):
+  marketing/posts/04-post-summer-vibe.png
+
+POST 5 image (optional):
+  marketing/posts/05-post-interviews.png
+
+TEXT FILES:
+  Bio        → texts/00-BIO-ENGLISH.txt
+  Post 1     → texts/01-POST-PIN-ENGLISH.txt
+  Post 2     → texts/02-POST-REAL-TALK-ENGLISH.txt
+  Post 3     → texts/03-POST-EDUCATION-CREW-ENGLISH.txt
+  Post 4     → texts/04-POST-VIBE-ENGLISH.txt
+  Post 5     → texts/05-POST-INTERVIEWS-ENGLISH.txt
+  Messenger  → texts/MESSENGER-SAVED-REPLY-ENGLISH.txt
+
+IF FILE UPLOAD FAILS:
+Stop that image step → tell Amitai:
+"Please drag [filename] from Desktop/Summer-Crew-Cyprus-COWORK/images/ into Facebook upload"
+Wait for OK → continue next step.
+
+═══════════════════════════════════════════════════════
+EXECUTE IN ORDER
+═══════════════════════════════════════════════════════
+
+STEP 1 — Delete empty posts
+Open content library.
+Delete EVERY post titled "ללא תוכן טקסט" (empty text).
+⋮ → Delete → Confirm each.
+Say: "STEP 1 DONE"
+
+STEP 2 — Cover photo
+Page → Edit cover photo → Upload:
+  images/cover-with-logo-slogan.png
+Position: "Learn. Lead. Earn." visible left → Save.
+Skip if already correct.
+Say: "STEP 2 DONE"
+
+STEP 3 — Logo verify
+Profile photo = logo-summer-crew-cyprus.png
+If wrong → upload and save. If OK → skip.
+Say: "STEP 3 DONE"
+
+STEP 4 — Category verify
+About → Category must be Education / השכלה.
+If wrong → fix. If OK → skip.
+Say: "STEP 4 DONE"
+
+STEP 5 — Update BIO (mandatory — fix old "holiday" text)
+About → Edit bio → paste EXACTLY from:
+  texts/00-BIO-ENGLISH.txt
+Save.
+Say: "STEP 5 DONE"
+
+STEP 6 — Contact details
+About → Edit contact:
+  Email: summercrewcyprus@gmail.com
+  Website: https://summer-crew-cyprus.web.app
+  Phone: empty
+Save.
+Say: "STEP 6 DONE"
+
+STEP 7 — Post 1: fix text + image + PIN
+Do NOT create duplicate.
+Find existing Post 1 ("SUMMER CREW CYPRUS").
+If text has "vacay" or "holiday" → Edit → replace with texts/01-POST-PIN-ENGLISH.txt
+If no image → add images/post-ad-youth-fun.png
+⋮ → Pin to top.
+Say: "STEP 7 DONE"
+
+STEP 8 — Post 2 (only if NOT already live)
+Check library first — no duplicate.
+Create post → paste texts/02-POST-REAL-TALK-ENGLISH.txt
+Add image: marketing/posts/02-post-real-talk.png (optional)
+Publish — skip boost.
+Say: "STEP 8 DONE"
+
+STEP 9 — Post 3 verify
+If education crew post already live → skip.
+If missing → publish texts/03-POST-EDUCATION-CREW-ENGLISH.txt
+Say: "STEP 9 DONE"
+
+STEP 10 — Post 4
+Create post → paste texts/04-POST-VIBE-ENGLISH.txt
+Optional image: marketing/posts/04-post-summer-vibe.png
+Publish — skip boost.
+Say: "STEP 10 DONE"
+
+STEP 11 — Post 5
+Create post → paste texts/05-POST-INTERVIEWS-ENGLISH.txt
+Optional image: marketing/posts/05-post-interviews.png
+Publish — skip boost.
+Say: "STEP 11 DONE"
+
+STEP 12 — Messenger saved reply
+Page Inbox → Settings → Saved replies
+Create reply named: APPLY
+Paste texts/MESSENGER-SAVED-REPLY-ENGLISH.txt
+Save.
+Say: "STEP 12 DONE"
+
+STEP 13 — Final verification + screenshot
+Confirm ALL:
+[ ] Cover: Learn. Lead. Earn.
+[ ] Logo correct
+[ ] Bio = work/job tone (no holiday)
+[ ] Contact: gmail + web.app
+[ ] Zero empty posts
+[ ] Posts 1(pinned), 2, 3, 4, 5 live
+[ ] Message button works
+Take full-page screenshot.
+Say: "ALL DONE — Facebook upload complete."
+
+DO NOT START ADS.

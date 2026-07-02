@@ -1,0 +1,63 @@
+GOOGLE FORM + CALENDAR — setup for Amitai or Cowork
+====================================================
+
+GOAL (one clear flow):
+  Step 1 → Form: name, email, PHONE, age, English, Cyprus duration
+  Step 2 → Calendar: candidate picks interview slot themselves
+
+After Form submit → confirmation page shows Calendar link (auto redirect).
+
+────────────────────────────────────────
+PART 1 — Google Form
+────────────────────────────────────────
+1. Log in as: summercrewcyprus@gmail.com
+2. https://forms.google.com → Blank form
+3. Title: Summer Crew Cyprus — Apply
+4. Description: Paid summer work · Training first · Limassol · Ages 16–21
+
+FIELDS (all required except notes):
+  • Full name (short answer)
+  • Email (short answer — validate email)
+  • Phone / WhatsApp (short answer)
+  • Age (number or dropdown 16–21)
+  • English level (multiple choice: Basic / Good / Fluent)
+  • How long in Cyprus? (short answer)
+  • Anything we should know? (paragraph — optional)
+
+5. Settings → Collect email addresses: ON
+6. Responses → Link to Google Sheet
+
+CONFIRMATION MESSAGE (after submit):
+  Copy-paste:
+
+  Thanks! Step 1 done ✓
+  Now book your interview (Step 2):
+  [PASTE GOOGLE CALENDAR APPOINTMENT LINK HERE]
+  Wed & Thu · 14:00–18:00 · 20 min · Limassol
+
+7. Copy form URL → paste in:
+   /Users/levi/cyprus-recruitment/docs/config.js → GOOGLE_FORM_URL
+
+────────────────────────────────────────
+PART 2 — Google Calendar Appointments
+────────────────────────────────────────
+1. https://calendar.google.com (same account)
+2. Create → Appointment schedule
+3. Name: Summer Crew Cyprus — Interview
+4. Duration: 20 minutes
+5. Available: Wednesday + Thursday, 14:00–18:00
+6. Location: Limassol (or video link if needed)
+7. Copy booking page URL → config.js → GOOGLE_CALENDAR_URL
+8. Paste SAME link in Form confirmation message (above)
+
+────────────────────────────────────────
+PART 3 — Deploy site
+────────────────────────────────────────
+cd /Users/levi/cyprus-recruitment
+npx firebase deploy --only hosting
+
+Site flow: https://summer-crew-cyprus.web.app#apply
+  Step 1 button → Form
+  Step 2 button → Calendar (after submit)
+
+DONE when both URLs in config.js are real (not forms.google.com placeholder).

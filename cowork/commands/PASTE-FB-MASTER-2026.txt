@@ -1,0 +1,58 @@
+SUMMER CREW CYPRUS — FACEBOOK MASTER PLAN (Cowork)
+==================================================
+
+READ: BRAND-VOICE.txt (paid work — NEVER vacation/holiday)
+
+FOLDER: /Users/levi/Desktop/Summer-Crew-Cyprus-COWORK/
+PAGE: https://www.facebook.com/profile.php?id=61591410037417
+LIBRARY: https://www.facebook.com/professional_dashboard/content/content_library/
+
+CONTACT:
+  Email: summercrewcyprus@gmail.com
+  Web: https://summer-crew-cyprus.web.app
+  Phone: empty until SIM task
+
+DO NOT: Israeli pages · paid ads (unless Amitai says GO) · domain purchase
+
+Say "STEP X DONE" after each step. Screenshot at end.
+
+═══════════════════════════════════════════════════════
+PHASE A — CLEANUP (do first)
+═══════════════════════════════════════════════════════
+A1 Delete ALL posts "ללא תוכן טקסט" (empty) → STEP A1 DONE
+A2 Verify cover = images/cover-with-logo-slogan.png → STEP A2 DONE
+A3 Verify logo = images/logo-summer-crew-cyprus.png → STEP A3 DONE
+A4 Category = Education only → STEP A4 DONE
+
+═══════════════════════════════════════════════════════
+PHASE B — TEXT FIXES (mandatory — old "vacay" text)
+═══════════════════════════════════════════════════════
+B1 Bio → paste texts/00-BIO-ENGLISH.txt → STEP B1 DONE
+B2 Post 1 → edit text to texts/01-POST-PIN-ENGLISH.txt
+    Add image post-ad-youth-fun.png · Pin top → STEP B2 DONE
+B3 Contact: gmail + web.app URL → STEP B3 DONE
+
+═══════════════════════════════════════════════════════
+PHASE C — PUBLISH POSTS (check library — no duplicates)
+═══════════════════════════════════════════════════════
+C1 Post 2 → texts/02 + image marketing/posts/02-post-real-talk.png → STEP C1 DONE
+C2 Post 3 → verify texts/03 exists → STEP C2 DONE
+C3 Post 4 → texts/04 + image 04-post-summer-vibe.png → STEP C3 DONE
+C4 Post 5 → texts/05 + image 05-post-interviews.png → STEP C4 DONE
+
+═══════════════════════════════════════════════════════
+PHASE D — MESSENGER + LINKS
+═══════════════════════════════════════════════════════
+D1 Saved reply "APPLY" → texts/MESSENGER-SAVED-REPLY-ENGLISH.txt → STEP D1 DONE
+D2 Website button/link → https://summer-crew-cyprus.web.app → STEP D2 DONE
+
+═══════════════════════════════════════════════════════
+PHASE E — VERIFY
+═══════════════════════════════════════════════════════
+[ ] Cover Learn Lead Earn
+[ ] 5 posts live, post 1 pinned, zero empty
+[ ] Bio + contact correct
+[ ] Message works
+Screenshot → "ALL DONE — Facebook master plan complete"
+
+IMAGE UPLOAD FAIL → ask Amitai to drag from images/ folder

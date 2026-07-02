@@ -1,0 +1,112 @@
+SUMMER CREW CYPRUS — FACEBOOK ONLY (no domain, no paid SIM, no ads)
+
+WORK FOLDER: /Users/levi/Desktop/Summer-Crew-Cyprus-COWORK/
+
+STOP / SKIP:
+- Domain purchase & DNS
+- Google Workspace / hello@summercrewcyprus.com
+- Cyprus +357 SIM (needs credit card — wait until tomorrow)
+- Paid Facebook ads / boost
+
+USE INSTEAD:
+- Temp project email: summercrewcyprus@gmail.com
+  (create this Gmail if it doesn't exist — free, no card needed)
+- Website link on FB: https://summer-crew-cyprus.web.app
+
+RULES:
+- English only on the page (public)
+- Post as "Summer Crew Cyprus" page
+- Do NOT touch Israeli Facebook pages
+- After each step say "STEP X DONE" exactly
+
+PAGE: https://www.facebook.com/profile.php?id=61591410037417
+CONTENT LIBRARY: https://www.facebook.com/professional_dashboard/content/content_library/
+IMAGES: /Users/levi/Desktop/Summer-Crew-Cyprus-COWORK/images/
+
+GOAL: Page looks ACTIVE — 5 posts live, cover, bio, category, contact, pinned post, messenger reply.
+
+═══════════════════════════════════════════════════════
+STEP B1 — Delete ALL empty posts (3 found in content library)
+═══════════════════════════════════════════════════════
+Content library → each "ללא תוכן טקסט" → open on page → ⋮ → Delete
+Say: "STEP B1 DONE"
+
+═══════════════════════════════════════════════════════
+STEP B2 — Cover (skip if already shows Learn. Lead. Earn.)
+═══════════════════════════════════════════════════════
+Upload: images/cover-with-logo-slogan.png
+Say: "STEP B2 DONE"
+
+═══════════════════════════════════════════════════════
+STEP B3 — Logo verify
+═══════════════════════════════════════════════════════
+logo-summer-crew-cyprus.png if wrong
+Say: "STEP B3 DONE"
+
+═══════════════════════════════════════════════════════
+STEP B4 — Category → Education
+═══════════════════════════════════════════════════════
+About → Category → REMOVE Elementary School / בית ספר יסודי → ADD Education
+Say: "STEP B4 DONE"
+
+═══════════════════════════════════════════════════════
+STEP B5 — Bio
+═══════════════════════════════════════════════════════
+Paste from: texts/00-BIO-ENGLISH.txt
+Say: "STEP B5 DONE"
+
+═══════════════════════════════════════════════════════
+STEP B6 — Contact (temp email, no phone yet)
+═══════════════════════════════════════════════════════
+Email: summercrewcyprus@gmail.com
+Website: https://summer-crew-cyprus.web.app
+Phone: leave empty until +357 SIM tomorrow
+Say: "STEP B6 DONE"
+
+═══════════════════════════════════════════════════════
+STEP B7 — Post 1: image + PIN
+═══════════════════════════════════════════════════════
+Text: texts/01-POST-PIN-ENGLISH.txt — do NOT duplicate
+Add image post-ad-youth-fun.png if missing → Pin to top
+Say: "STEP B7 DONE"
+
+═══════════════════════════════════════════════════════
+STEP B8 — Post 2 (if missing)
+═══════════════════════════════════════════════════════
+texts/02-POST-REAL-TALK-ENGLISH.txt + optional image
+Say: "STEP B8 DONE"
+
+═══════════════════════════════════════════════════════
+STEP B9 — Post 3 verify (already published — no duplicate)
+═══════════════════════════════════════════════════════
+Say: "STEP B9 DONE"
+
+═══════════════════════════════════════════════════════
+STEP B10 — Post 4
+═══════════════════════════════════════════════════════
+texts/04-POST-VIBE-ENGLISH.txt
+Say: "STEP B10 DONE"
+
+═══════════════════════════════════════════════════════
+STEP B11 — Post 5
+═══════════════════════════════════════════════════════
+texts/05-POST-INTERVIEWS-ENGLISH.txt
+Say: "STEP B11 DONE"
+
+═══════════════════════════════════════════════════════
+STEP B12 — Messenger saved reply "APPLY"
+═══════════════════════════════════════════════════════
+texts/MESSENGER-SAVED-REPLY-ENGLISH.txt
+Say: "STEP B12 DONE"
+
+═══════════════════════════════════════════════════════
+STEP B13 — Screenshot + checklist
+═══════════════════════════════════════════════════════
+[ ] Cover + logo
+[ ] Category Education
+[ ] Bio + contact (gmail + web.app link)
+[ ] Posts 1–5, post 1 pinned, no empty post
+[ ] Message button works
+Say: "ALL DONE — Facebook active. Domain/SIM tomorrow."
+
+DO NOT START ADS.

@@ -1,0 +1,16 @@
+Gmail is ready and logged in: summercrewcyprus@gmail.com
+
+Continue from STEP G1 in PASTE-02-CREATE-GMAIL.txt:
+- Verify inbox
+- Set signature (Learn. Lead. Earn. — paid summer work)
+- Optional: forward to amitai3386@gmail.com
+- Send test email to amitai3386@gmail.com
+- Update Facebook contact:
+  Page https://www.facebook.com/profile.php?id=61591410037417
+  Email: summercrewcyprus@gmail.com
+  Website: https://summer-crew-cyprus.web.app
+- Screenshot + write RESULT-GMAIL.txt (already exists — confirm)
+
+If Facebook upload (PASTE-01) not done yet — do STEP 6 contact there too.
+
+Say "ALL DONE — Gmail on Facebook" when finished.

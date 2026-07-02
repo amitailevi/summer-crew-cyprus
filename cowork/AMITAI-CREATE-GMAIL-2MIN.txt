@@ -1,0 +1,25 @@
+אמיתי — צור את ה-Gmail בעצמך (2 דקות)
+========================================
+
+Cowork לא יכול ליצור חשבונות Google — זה חוק בטיחות קבוע.
+
+אתה עושה:
+1. פתח: https://accounts.google.com/signup
+2. שם: Summer Crew / Cyprus
+3. מייל: summercrewcyprus@gmail.com
+   (אם תפוס: summercrewcyprus2026@gmail.com)
+4. סיסמה — אתה מקליד
+5. SMS — אתה מאשר בטלפון
+6. מייל שחזור: amitai3386@gmail.com
+
+אחרי שזה מוכן — תגיד ל-Cowork:
+"Gmail ready: summercrewcyprus@gmail.com"
+
+ואז הדבק:
+commands/PASTE-02-CREATE-GMAIL.txt
+
+Cowork יעשה אחרי זה:
+  • חתימה ב-Gmail
+  • העברה ל-amitai3386 (אופציונלי)
+  • מייל בדיקה
+  • עדכון המייל בפייסבוק

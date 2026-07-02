@@ -1,0 +1,55 @@
+SUMMER CREW CYPRUS — מפת חומרים (קצר)
+======================================
+תיקייה: /Users/levi/Desktop/Summer-Crew-Cyprus-COWORK/
+
+טקסטים (7) — texts/
+  00-BIO-ENGLISH.txt          ביו פייסבוק
+  01-POST-PIN-ENGLISH.txt     פוסט 1 + הצמדה
+  02-POST-REAL-TALK-ENGLISH   פוסט 2
+  03-POST-EDUCATION-CREW      פוסט 3
+  04-POST-VIBE-ENGLISH        פוסט 4
+  05-POST-INTERVIEWS          פוסט 5
+  MESSENGER-SAVED-REPLY       תשובה APPLY
+
+תמונות עיקריות (4) — images/
+  cover-with-logo-slogan.png  קאבר ראשי ★
+  cover-beach-villa-youth.png קאבר גיבוי
+  logo-summer-crew-cyprus.png לוגו פרופיל ★
+  post-ad-youth-fun.png       תמונה פוסט 1 ★
+
+שיווק (19) — marketing/
+  COVERS (4)
+    01 learn-lead-earn ★
+    02 beach-villa
+    03 pool-golden-hour
+    04 dark-night-pool
+  LOGOS (9)
+    01 full-color ★
+    02 bright-white
+    03 dark-black
+    04 icon-only
+    05 text-only
+    06 slogan-stacked
+    07 horizontal-slogan
+    08 mono-white
+    09 mono-black
+  POSTS (6)
+    01 youth-fun ★
+    02 real-talk
+    03 education-crew
+    04 summer-vibe
+    05 interviews
+    06 apply-now
+
+פקודות Cowork — commands/
+  ★ PASTE-01-FACEBOOK-NOW.txt     פייסבוק מלא
+    PASTE-04-EMAIL-WEBSITE.txt    מייל+אתר בFB
+    SETUP-GOOGLE-FORM-CALENDAR    טופס+יומן
+    PASTE-03-BUY-CYPRUS-SIM.txt   SIM (אשראי)
+    GITHUB-SETUP.txt
+
+חוקים — BRAND-VOICE.txt (עבודה, לא חופשה)
+מצב — STATUS-NOW.txt
+★ = הכי חשוב לשימוש ראשון
+
+סה"כ: 7 טקסטים · 4 תמונות · 19 שיווק · 10+ פקודות

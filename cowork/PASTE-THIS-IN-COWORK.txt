@@ -1,0 +1,130 @@
+You are finishing the Summer Crew Cyprus Facebook page.
+
+WORK FOLDER (all files here):
+/Users/levi/Desktop/Summer-Crew-Cyprus-COWORK/
+
+PAGE: https://www.facebook.com/profile.php?id=61591410037417
+CONTENT LIBRARY: https://www.facebook.com/professional_dashboard/content/content_library/
+
+RULES:
+- English only on the page (public text)
+- Post as "Summer Crew Cyprus" page — NOT personal profile
+- Do NOT touch Israeli Facebook pages
+- Do NOT start paid ads / boost
+- Do NOT buy domain or SIM (paused — no credit card today)
+- Read BRAND-VOICE.txt — this is PAID WORK + training, NEVER "vacation/holiday/vacay"
+- After each step say "STEP X DONE" exactly
+- Screenshot at the end
+
+CONTACT (use these — NOT hello@summercrewcyprus.com):
+- Email: summercrewcyprus@gmail.com
+- Website: https://summer-crew-cyprus.web.app
+- Phone: leave empty
+
+═══════════════════════════════════════════════════════
+ALREADY DONE — SKIP (verify only, do not redo)
+═══════════════════════════════════════════════════════
+✅ Logo (logo-summer-crew-cyprus.png on profile)
+✅ Category = Education / השכלה
+✅ Bio (texts/00-BIO-ENGLISH.txt) — RE-UPDATE if old text says "holiday/vacay"
+✅ Post 1 text published — RE-EDIT if old text says "vacay"
+✅ Post 3 published (education crew)
+
+═══════════════════════════════════════════════════════
+IMAGE FILES — full paths (use in file picker)
+═══════════════════════════════════════════════════════
+COVER:    /Users/levi/Desktop/Summer-Crew-Cyprus-COWORK/images/cover-with-logo-slogan.png
+LOGO:     /Users/levi/Desktop/Summer-Crew-Cyprus-COWORK/images/logo-summer-crew-cyprus.png
+POST IMG: /Users/levi/Desktop/Summer-Crew-Cyprus-COWORK/images/post-ad-youth-fun.png
+
+If file upload fails in browser: ask Amitai to drag the file from Desktop → Summer-Crew-Cyprus-COWORK/images/ into the Facebook upload dialog. Then continue with text steps.
+
+═══════════════════════════════════════════════════════
+TODO — do in order
+═══════════════════════════════════════════════════════
+
+STEP B1 — Delete ALL empty posts
+───────────────────────────────────────────────────────
+Content library → every post titled "ללא תוכן טקסט" (3 found)
+Open each on the page → ⋮ → Delete → Confirm
+Say: "STEP B1 DONE"
+
+STEP B2 — Cover photo (if missing or wrong image)
+───────────────────────────────────────────────────────
+Page → Edit cover → Upload cover-with-logo-slogan.png
+Position so "Learn. Lead. Earn." visible on left → Save
+Skip if cover already correct.
+Say: "STEP B2 DONE"
+
+STEP B3 — Logo verify
+───────────────────────────────────────────────────────
+Already correct → skip
+Say: "STEP B3 DONE"
+
+STEP B4 — Category verify
+───────────────────────────────────────────────────────
+Already Education → skip
+Say: "STEP B4 DONE"
+
+STEP B5 — Bio (UPDATE — old version had "holiday" — fix it)
+───────────────────────────────────────────────────────
+About → Edit bio → paste from texts/00-BIO-ENGLISH.txt (work/job tone, NOT vacation)
+Say: "STEP B5 DONE"
+
+STEP B6 — Contact details
+───────────────────────────────────────────────────────
+About → Edit contact:
+  Email: summercrewcyprus@gmail.com
+  Website: https://summer-crew-cyprus.web.app
+  Phone: empty
+Save
+Say: "STEP B6 DONE"
+
+STEP B7 — Post 1: fix text if needed + image + PIN
+───────────────────────────────────────────────────────
+Do NOT create duplicate post.
+If post says "vacay" or "holiday" → Edit → replace with texts/01-POST-PIN-ENGLISH.txt
+Add post-ad-youth-fun.png if no image → Pin to top
+Say: "STEP B7 DONE"
+
+STEP B8 — Publish Post 2 (only if missing)
+───────────────────────────────────────────────────────
+Check content library first — do NOT duplicate.
+Create post → paste from texts/02-POST-REAL-TALK-ENGLISH.txt
+Optional image: post-ad-youth-fun.png
+Publish — skip boost
+Say: "STEP B8 DONE"
+
+STEP B9 — Post 3 verify
+───────────────────────────────────────────────────────
+Already live → skip
+Say: "STEP B9 DONE"
+
+STEP B10 — Publish Post 4
+───────────────────────────────────────────────────────
+Paste from texts/04-POST-VIBE-ENGLISH.txt → Publish
+Say: "STEP B10 DONE"
+
+STEP B11 — Publish Post 5
+───────────────────────────────────────────────────────
+Paste from texts/05-POST-INTERVIEWS-ENGLISH.txt → Publish
+Say: "STEP B11 DONE"
+
+STEP B12 — Messenger saved reply
+───────────────────────────────────────────────────────
+Page Inbox → Settings → Saved replies → Create "APPLY"
+Paste from texts/MESSENGER-SAVED-REPLY-ENGLISH.txt
+Say: "STEP B12 DONE"
+
+STEP B13 — Final check + screenshot
+───────────────────────────────────────────────────────
+[ ] Cover Learn. Lead. Earn.
+[ ] Logo OK
+[ ] Contact: gmail + web.app
+[ ] No empty posts
+[ ] Posts 1 (pinned), 2, 3, 4, 5 live
+[ ] Message button works
+Screenshot full page.
+Say: "ALL DONE — Facebook active."
+
+DO NOT START ADS.
