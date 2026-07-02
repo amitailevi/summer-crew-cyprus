@@ -1,24 +1,41 @@
-SUMMER CREW CYPRUS — מצב 2 ביולי 2026
-========================================
+SUMMER CREW CYPRUS — נקודת עצירה (2 ביולי 2026, סוף יום)
+================================================================
 
-עכשיו:
-  ✅ אתר — עיצוב חדש (נקי, צעיר, Coca-Cola energy)
-  ✅ GitHub — https://github.com/amitailevi/summer-crew-cyprus
+✅ בוצע היום (Cowork + Cursor)
+------------------------------
+פייסבוק:
+  ✅ קאבר Learn. Lead. Earn.
+  ✅ לוגו
+  ✅ קטגוריה השכלה
+  ✅ ביו (בלי holiday/vacay)
+  ✅ פרטי קשר: summercrewcyprus@gmail.com + summer-crew-cyprus.web.app
+  ✅ פוסט 1 טקסט תוקן
+  ✅ פוסטים 2, 3, 4, 5 פורסמו
+  ✅ Messenger — מילת מפתח APPLY
+
+אתר + תשתית:
+  ✅ אתר חדש (נקי, צעיר) — summer-crew-cyprus.web.app
+  ✅ טופס פרטים → מייל (FormSubmit)
+  ✅ GitHub — github.com/amitailevi/summer-crew-cyprus
   ✅ Gmail — summercrewcyprus@gmail.com
-  ✅ חומרים — MARKETING-INDEX.txt
 
-מחר:
-  ⏳ דומיין summercrewcyprus.com + hello@ (אשראי)
-  ⏳ SIM +357
+⬜ נשאר לידני / מחר — פייסבוק
+------------------------------
+  1. מחק 2 פוסטים ריקים ("ללא תוכן טקסט") — מהפיד בדפדפן רגיל
+  2. הצמד פוסט 1 (SUMMER CREW) לראש — ⋯ → הצמד לראש הדף
+  3. תמונות לפוסטים (אופציונלי) — marketing/posts/ או images/
 
-היום (כשאמיתי אומר GO):
-  🚀 מודעות פייסבוק
+⏸️ מחר
+-------
+  • דומיין summercrewcyprus.com + hello@ (אשראי Cloudflare)
+  • SIM +357 — PASTE-03-BUY-CYPRUS-SIM.txt
+  • FormSubmit — Activate במייל (אם עדיין לא)
+  • Google Calendar שלב 2 באתר (אופציונלי)
+  • מודעות FB — רק כשאמיתי אומר GO
 
-Cowork עכשיו:
-  → commands/PASTE-FB-MASTER-2026.txt
+Cowork מחר:
+  • לא צריך PASTE-FB-MASTER מחדש — רק 3 משימות ידניות למעלה
+  • AMITAI-MANUAL-1MIN.txt — גרירת תמונות
 
-GitHub push (אחרי שינויים):
-  cd /Users/levi/cyprus-recruitment && git add -A && git commit -m "..." && git push
-
-Firebase (אחרי שינוי אתר):
-  npx firebase deploy --only hosting
+תיקייה: /Users/levi/Desktop/Summer-Crew-Cyprus-COWORK/
+קוד: /Users/levi/cyprus-recruitment/

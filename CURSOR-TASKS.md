@@ -1,29 +1,18 @@
-# Infrastructure — PAUSED (credit card / domain tomorrow)
+# Summer Crew Cyprus — STOP POINT (end of day 2 Jul 2026)
 
-## STOPPED until card fixed
-- Domain summercrewcyprus.com
-- Google Workspace email
-- Cyprus +357 SIM
+## Done today
+- Facebook: cover, logo, category, bio, contact, posts 1–5 text, Messenger APPLY
+- Site live + email form
+- GitHub synced
 
-## Temp project email (Facebook + site contact)
-- **summercrewcyprus@gmail.com** — create free Gmail, no card needed
-- Site already live: https://summer-crew-cyprus.web.app
+## Tomorrow — manual FB (5 min in browser)
+1. Delete 2 empty posts ("ללא תוכן טקסט")
+2. Pin post 1 (SUMMER CREW) to top
+3. Optional: add images from `cowork/marketing/posts/`
 
-## ACTIVE — Facebook only
-Paste in Cowork: `/Users/levi/Desktop/Summer-Crew-Cyprus-COWORK/FB-ONLY-NO-DOMAIN.txt`
+## Tomorrow — infrastructure
+- Domain + hello@ email (Cloudflare payment)
+- Cyprus SIM (+357)
+- FB ads when user says GO
 
-## Firebase (done)
-- https://summer-crew-cyprus.web.app
-
-## GitHub ✅
-**Live:** https://github.com/amitailevi/summer-crew-cyprus  
-Branch: `main` · 46 files · commit `2a483eb`
-
-Push updates:
-```bash
-cd /Users/levi/cyprus-recruitment && git add -A && git commit -m "..." && git push
-```
-
-## Cowork handles NOW
-- Facebook page fixes + posts 2,4,5 + contact + messenger reply
-- See FB-ONLY-NO-DOMAIN.txt
+See `cowork/STATUS-NOW.txt` for full Hebrew checklist.
