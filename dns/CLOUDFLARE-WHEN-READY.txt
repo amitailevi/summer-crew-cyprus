@@ -7,9 +7,10 @@ Domain: summercrewcyprus.com (Cloudflare)
 2. Firebase Console → Hosting → Add custom domain → summercrewcyprus.com
 3. Copy DNS records Firebase shows → paste in Cloudflare DNS
 4. SSL: Full (strict) — Firebase handles cert
-5. docs/config.js:
-     SITE_URL: "https://summercrewcyprus.com"
+5. docs/config.js — set **either**:
      CUSTOM_DOMAIN: "https://summercrewcyprus.com"
+   (SITE_URL auto-derived from CUSTOM_DOMAIN in scc-core.js)
+   — or set SITE_URL directly if preferred
 6. npx firebase deploy --only hosting
 7. Google Workspace / forwarding: hello@ → summercrewcyprus@gmail.com (optional)
 

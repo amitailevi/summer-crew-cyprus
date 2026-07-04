@@ -7,7 +7,7 @@ SUMMER CREW CYPRUS — Product Ready Checklist
 - [x] SEO/OG/sitemap/JSON-LD/canonical
 - [x] Integrations map + deploy/verify scripts
 - [x] Firebase headers (cache + security)
-- [x] Calendar embed helper + Messenger fallback
+- [x] Modular JS: config.js + scc-core.js + site.js
 - [x] GitHub synced + CI verify workflow
 - [x] FB page: cover, logo, bio, 5 posts, APPLY, pin
 - [x] ADS-READY-GO.txt (do not publish)

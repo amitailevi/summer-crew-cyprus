@@ -32,7 +32,12 @@
   };
 
   function setHref(el, url) {
-    if (el && url) el.href = url;
+    if (!el || !url) return;
+    if (String(url).indexOf("mailto:") === 0) {
+      el.href = url;
+      return;
+    }
+    if (SCC.isSafeHttpUrl(url)) el.href = url;
   }
 
   setHref(els.fbFooter, c.FACEBOOK_PAGE);
@@ -124,6 +129,7 @@
 
       var btn = els.form.querySelector('button[type="submit"]');
       var englishLevel = els.form.querySelector('[name="english_level"]');
+      var emailEl = els.form.querySelector('[name="email"]');
       var year = els.birthYear ? parseInt(els.birthYear.value, 10) : NaN;
 
       if (!SCC.isValidBirthYear(year, nowYear)) {
@@ -143,6 +149,13 @@
         return;
       }
       if (englishLevel) englishLevel.setCustomValidity("");
+
+      if (emailEl && !SCC.isValidEmail(emailEl.value)) {
+        emailEl.setCustomValidity("Enter a valid email address");
+        emailEl.reportValidity();
+        return;
+      }
+      if (emailEl) emailEl.setCustomValidity("");
 
       submitting = true;
       if (btn) {
@@ -197,6 +210,11 @@
   var calUrl = SCC.calendarEmbedUrl(calRaw);
 
   if (calUrl && els.calIframe && els.calPlaceholder) {
+    els.calIframe.addEventListener("error", function () {
+      els.calIframe.hidden = true;
+      els.calPlaceholder.hidden = false;
+      SCC.setCalendarFallback(els.calPlaceholder, c);
+    });
     els.calIframe.src = calUrl;
     els.calIframe.hidden = false;
     els.calPlaceholder.hidden = true;

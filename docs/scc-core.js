@@ -67,6 +67,7 @@
 
   function calendarEmbedUrl(url) {
     if (!url || url === "https://calendar.google.com/") return "";
+    if (!isSafeHttpUrl(url)) return "";
     if (
       url.indexOf("calendar.google.com/calendar/appointments") !== -1 &&
       url.indexOf("gv=true") === -1
@@ -74,6 +75,21 @@
       return url + (url.indexOf("?") !== -1 ? "&" : "?") + "gv=true";
     }
     return url;
+  }
+
+  function isSafeHttpUrl(url) {
+    if (!url || typeof url !== "string") return false;
+    try {
+      var u = new URL(url.trim());
+      return u.protocol === "https:" || u.protocol === "http:";
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function isValidEmail(value) {
+    if (!value || typeof value !== "string") return false;
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim());
   }
 
   function formActionUrl(c) {
@@ -184,6 +200,8 @@
     isValidBirthYear: isValidBirthYear,
     trimFormFields: trimFormFields,
     isValidEnglishLevel: isValidEnglishLevel,
+    isValidEmail: isValidEmail,
+    isSafeHttpUrl: isSafeHttpUrl,
     setCalendarFallback: setCalendarFallback
   };
 })(window);
