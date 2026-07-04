@@ -11,7 +11,7 @@ Google Forms (הגשת מועמדות → Google Sheets)
         ↓
 Google Calendar Appointments (תיאום ראיון 14–18)
         ↓
-Gmail aaxxll386@gmail.com (התראות)
+Gmail summercrewcyprus@gmail.com (התראות)
         ↓
 Facebook Page (שיווק)
 ```
@@ -86,7 +86,7 @@ Facebook Page (שיווק)
 
 ## שלב 5 — Google Calendar Appointments
 
-1. [calendar.google.com](https://calendar.google.com) — `aaxxll386@gmail.com`
+1. [calendar.google.com](https://calendar.google.com) — `summercrewcyprus@gmail.com`
 2. **Appointment schedules** → Create
 3. Name: `Summer Crew Interview`
 4. Duration: 20 min, buffer: 0

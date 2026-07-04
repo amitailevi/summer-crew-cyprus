@@ -22,7 +22,7 @@ Calendly — בוחרת שעה לראיון
 
 | # | מה | דוגמה |
 |---|-----|--------|
-| 1 | **אימייל עסקי** | `aaxxll386@gmail.com` |
+| 1 | **אימייל עסקי** | `summercrewcyprus@gmail.com` |
 | 2 | **לינק דף פייסבוק** | facebook.com/... |
 | 3 | **Calendly** | cal.com/... (כשמוכן) |
 

@@ -44,7 +44,7 @@
 ## פרטי קשר
 - WhatsApp: [המספר שלך]
 - Location: Limassol, Cyprus
-- Email: aaxxll386@gmail.com
+- Email: summercrewcyprus@gmail.com
 
 ## צבעי מותג
 | צבע | Hex |

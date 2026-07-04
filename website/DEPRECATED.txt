@@ -1,0 +1,1 @@
+<!-- DEPRECATED: live site is ../docs/ — deploy via Firebase hosting -->

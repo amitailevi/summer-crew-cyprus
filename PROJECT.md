@@ -2,11 +2,12 @@
 
 | What | Where |
 |------|--------|
-| **Live site** | https://summer-crew-cyprus.web.app (Firebase) |
-| **Code + docs** | https://github.com/amitailevi/summer-crew-cyprus |
-| **Cowork assets** | `cowork/` in repo + Desktop folder |
+| **Live site** | https://summer-crew-cyprus.web.app (Firebase `docs/`) |
+| **Integrations** | `INTEGRATIONS.md` |
+| **Product status** | `PRODUCT-READY.md` · `cowork/STATUS-NOW.txt` |
+| **Code** | https://github.com/amitailevi/summer-crew-cyprus |
 | **Facebook** | [Page](https://www.facebook.com/profile.php?id=61591410037417) |
-| **Email** | summercrewcyprus@gmail.com |
+| **Email (inbound)** | summercrewcyprus@gmail.com |
 
 ## Repo structure
 

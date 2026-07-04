@@ -5,7 +5,7 @@
 **Google Calendar → Appointment schedules**  
 (בעברית: "לוחות זמנים לפגישות")
 
-זה כמו Calendly — בתוך Gmail שלך `aaxxll386@gmail.com`
+זה כמו Calendly — בתוך Gmail שלך `summercrewcyprus@gmail.com`
 
 ---
 
@@ -30,7 +30,7 @@
 
 ## הגדרה — 10 דקות
 
-1. [calendar.google.com](https://calendar.google.com) — התחבר עם `aaxxll386@gmail.com`
+1. [calendar.google.com](https://calendar.google.com) — התחבר עם `summercrewcyprus@gmail.com`
 2. שמאל למטה: **Appointment schedules** / **לוח זמנים לפגישות**
 3. **+ Create** → שם: `Summer Crew Interview`
 4. **Duration:** 20 minutes

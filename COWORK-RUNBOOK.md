@@ -45,7 +45,7 @@
 - **Namecheap** — https://www.namecheap.com
 - **Porkbun** — https://porkbun.com
 
-**Do NOT use** personal Gmail as public contact. The test email `aaxxll386@gmail.com` was temporary only.
+The test email `summercrewcyprus@gmail.com` is the project inbox (inbound forms only).
 
 After purchase, write down:
 ```

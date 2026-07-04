@@ -25,7 +25,7 @@
 **Send Message** (Messenger)
 
 ## אימייל
-aaxxll386@gmail.com
+summercrewcyprus@gmail.com
 
 ## מה להעלות (אנגלית בלבד)
 

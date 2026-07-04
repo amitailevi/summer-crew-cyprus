@@ -1,0 +1,21 @@
+name: verify-site
+
+on:
+  push:
+    branches: [main]
+    paths: ['docs/**', 'firebase.json', 'scripts/**']
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Smoke check live site
+        run: |
+          BASE=https://summer-crew-cyprus.web.app
+          for path in / /robots.txt /sitemap.xml /config.js; do
+            code=$(curl -sf -o /dev/null -w "%{http_code}" "$BASE$path" || echo 000)
+            echo "$path -> $code"
+            test "$code" = "200" || exit 1
+          done

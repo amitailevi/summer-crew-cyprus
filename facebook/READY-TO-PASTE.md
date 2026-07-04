@@ -1,6 +1,6 @@
 # הדבקה מוכנה — Summer Crew Cyprus
 
-**Email:** aaxxll386@gmail.com  
+**Email:** summercrewcyprus@gmail.com  
 **Phone:** לא בשלב זה — הכל במייל + Messenger
 
 ---
@@ -13,7 +13,7 @@
 📍 Limassol — interviews Tue–Thu
 ✅ 3-day training · Paid on time · Real support
 
-📧 Apply via form — we'll email you: aaxxll386@gmail.com
+📧 Apply via form — we'll email you: summercrewcyprus@gmail.com
 👇 Or use the Apply button below
 ```
 
@@ -26,7 +26,7 @@ Thanks for applying! 🌊
 
 Check your email within 24 hours for next steps.
 
-Questions? Email us: aaxxll386@gmail.com
+Questions? Email us: summercrewcyprus@gmail.com
 
 Interviews: Tue 16:00–20:00 | Wed & Thu all day
 📍 Limassol
@@ -54,7 +54,7 @@ Or use the Apply form on our page 👇
 
 ## Calendly — הגדרות
 
-- **Notifications:** שלח ל-`aaxxll386@gmail.com` על כל booking
+- **Notifications:** שלח ל-`summercrewcyprus@gmail.com` על כל booking
 - **Confirmation email to invitee:** Calendly default (לאימייל שלה)
 - **Location:** Leonardo Hotel Limassol
 
