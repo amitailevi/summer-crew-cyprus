@@ -25,7 +25,7 @@ Gmail: summercrewcyprus@gmail.com
   • Google Calendar URL → config.js (ראה CALENDAR-5MIN.txt)
   • מודעות — GO מאמיתי
 
-לילה אוטונומי (מחזור 2):
-  ✅ JSON-LD + canonical + טופס UX
-  ✅ PRODUCT-READY.md · MORNING-BRIEF.txt · FB-IMAGES-MAP.txt
-  ✅ deploy live
+לילה אוטונומי (מחזור 2–5):
+  ✅ אינטגרציות · CI · מודעות GO-ready · איחוד מייל
+  ✅ Messenger reply מעודכן · npm run deploy/verify
+  ✅ MORNING-BRIEF · PRODUCT-READY מעודכן

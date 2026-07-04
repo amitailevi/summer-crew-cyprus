@@ -1,28 +1,29 @@
 SUMMER CREW CYPRUS — Product Ready Checklist
 =============================================
 
-## ✅ Done (autonomous)
+## ✅ Done (autonomous — night 4–5 Jul)
 - [x] Live site: summer-crew-cyprus.web.app
 - [x] Apply form → FormSubmit → summercrewcyprus@gmail.com
-- [x] OG/Twitter/SEO (canonical, sitemap, robots, JSON-LD)
-- [x] GitHub repo synced (local changes pending push)
-- [x] FB page: cover, logo, bio, 5 posts, Messenger APPLY, pin
-- [x] Cowork pack: texts, images, commands
-- [x] Autonomous protocols saved
+- [x] SEO/OG/sitemap/JSON-LD/canonical
+- [x] Integrations map + deploy/verify scripts
+- [x] Firebase headers (cache + security)
+- [x] Calendar embed helper + Messenger fallback
+- [x] GitHub synced + CI verify workflow
+- [x] FB page: cover, logo, bio, 5 posts, APPLY, pin
+- [x] ADS-READY-GO.txt (do not publish)
+- [x] All docs → summercrewcyprus@gmail.com
 
 ## ⏸ Human-only (morning)
 - [ ] Cloudflare domain payment (~$10)
-- [ ] hello@summercrewcyprus.com
-- [ ] FormSubmit: submit test form → click activation in Gmail
-- [ ] Google Calendar: create schedule → paste URL in docs/config.js → deploy
-- [ ] Cyprus SIM +357 (when card works)
-- [ ] FB ads → say **GO**
+- [ ] FormSubmit: test form → activation link in Gmail
+- [ ] Google Calendar URL → docs/config.js → npm run deploy
+- [ ] Cyprus SIM +357
+- [ ] FB ads → **GO**
 
-## Optional polish
-- [ ] Add images to FB posts (see FB-IMAGES-MAP.txt)
-- [ ] git add -A && git commit && git push (local night changes)
+## Optional
+- [ ] FB post images (FB-IMAGES-MAP.txt)
 
-## 3-minute morning start
-1. CALENDAR-5MIN.txt
+## Morning (3 min)
+1. `cowork/CALENDAR-5MIN.txt`
 2. Test form at web.app#apply
-3. Check STATUS-NOW.txt
+3. `MORNING-BRIEF.txt`

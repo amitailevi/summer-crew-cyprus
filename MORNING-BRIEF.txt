@@ -2,18 +2,20 @@
 ==================================
 
 מוצר חי: https://summer-crew-cyprus.web.app
+GitHub: github.com/amitailevi/summer-crew-cyprus (main)
 פייסבוק: profile.php?id=61591410037417
 
-מה נעשה בלילה:
-  • SEO/OG/sitemap/JSON-LD + טופס משופר
-  • פרוטוקולים + PRODUCT-READY.md
-  • Firebase deploy
+מה נעשה בלילה (מחזורים 1–5):
+  • אתר: SEO, JSON-LD, טופס UX, Calendar/Messenger connectors
+  • תשתית: INTEGRATIONS.md, deploy.sh, CI verify, Firebase headers
+  • תיעוד: איחוד מייל, ADS-READY-GO, tracker, פרוטוקולים
+  • deploy + git push
 
 3 דקות שלך:
-  1. CALENDAR-5MIN.txt → יומן ב-config.js → deploy
+  1. CALENDAR-5MIN.txt → config.js → npm run deploy
   2. טופס בדיקה → אישור FormSubmit במייל
   3. אשראי → דומיין Cloudflare
 
 לא נגענו: מודעות · פנייה לאנשים · דפים ישראליים
 
-לוג מלא: cowork/NIGHT-WORK-LOG.txt
+לוג: cowork/NIGHT-WORK-LOG.txt · רשימה: PRODUCT-READY.md
