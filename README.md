@@ -13,24 +13,31 @@ Youth recruitment site & ops materials — Limassol hotel training crew (ages 16
 |-------|------|
 | Site | Firebase Hosting (`docs/`) |
 | Code | GitHub (this repo) |
-| Apply | Google Form → Google Sheet |
-| Interviews | Google Calendar Appointments |
+| Apply | FormSubmit AJAX → Gmail |
+| Interviews | Google Calendar Appointments (embed) |
 | Cowork assets | `~/Desktop/Summer-Crew-Cyprus-COWORK/` |
 
 ## Deploy site
 
 ```bash
 cd cyprus-recruitment
-npx firebase deploy --only hosting
+npm run deploy
 ```
 
 ## Config
 
-Edit `docs/config.js` — Form URL, Calendar URL, contact email.
+Edit `docs/config.js` — calendar embed URL, contact email, `SITE_URL`.
+
+See `INTEGRATIONS.md` and `cowork/CALENDAR-5MIN.txt`.
 
 ## Apply flow
 
-1. **Step 1** — Google Form (name, email, phone, age, English)
-2. **Step 2** — Google Calendar (book Wed/Thu 14:00–18:00)
+1. **Step 1** — Inline form (name, passport, birth year, address, mobile, email)
+2. **Step 2** — Google Calendar embed (Wed/Thu 14:00–18:00) or Messenger fallback
 
-See `commands/SETUP-GOOGLE-FORM-CALENDAR.txt` in Desktop Cowork folder.
+## Verify
+
+```bash
+npm run verify          # local + live smoke checks
+npm run verify:local    # repo files only
+```

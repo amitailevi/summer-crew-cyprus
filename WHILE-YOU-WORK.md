@@ -13,7 +13,7 @@
 | `operations/INTERVIEW-DAY.md` | יום ראיונות + מבנה 20 דק' |
 | `training/3-DAY-PROGRAM.md` | תוכנית הכשרה |
 | `SCHEDULING.md` | Calendly/Cal.com slots רצופים |
-| `website/index.html` | אתר נחיתה (אחרי Calendly) |
+| `docs/index.html` | אתר נחיתה (Firebase — live) |
 
 ## ⏳ מחכה לך
 

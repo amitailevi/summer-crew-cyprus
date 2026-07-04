@@ -1,44 +1,32 @@
-GOOGLE FORM + CALENDAR — embedded ON the website
-=================================================
+FORM + CALENDAR SETUP — Summer Crew Cyprus
+==========================================
 
 Login: summercrewcyprus@gmail.com
 
-PART 1 — Google Form (embedded in site Step 1)
-----------------------------------------------
-1. https://forms.google.com → New form
-2. Title: Summer Crew Cyprus — Apply
+PART 1 — Apply form (FormSubmit — already live)
+------------------------------------------------
+The apply form is built into docs/index.html and posts via FormSubmit AJAX.
 
-FIELDS (required unless noted):
-  • Full name (short answer)
-  • Passport number (short answer)
-  • Birth year (short answer or dropdown)
-  • Parents address (short answer)
-  • Mobile / WhatsApp (short answer)
-  • Email (short answer)
-  • English level (multiple choice)
-  • How long in Cyprus? (short answer)
+One-time activation:
+1. Submit a test at https://summer-crew-cyprus.web.app#apply
+2. Open summercrewcyprus@gmail.com inbox
+3. Click "Activate Form" in the FormSubmit email
 
-3. Responses → Link to Google Sheet
-4. Send → Embed HTML → copy iframe src URL
-   Looks like: https://docs.google.com/forms/d/e/XXXXX/viewform?embedded=true
-5. Paste into docs/config.js → GOOGLE_FORM_EMBED
-6. firebase deploy --only hosting
+Config key (only if changing inbox): docs/config.js → APPLY_FORM_EMAIL
 
-PART 2 — Google Calendar Appointments (embedded Step 2)
--------------------------------------------------------
-1. https://calendar.google.com → Create → Appointment schedule
+PART 2 — Google Calendar Appointments (Step 2 embed)
+----------------------------------------------------
+1. https://calendar.google.com → Appointment schedules → Create
 2. Name: Summer Crew Cyprus — Interview
-3. Duration: 20 min
-4. Hours: Wed + Thu, 14:00–18:00
-5. Copy the public booking page URL
-6. Paste into docs/config.js → GOOGLE_CALENDAR_EMBED
-7. firebase deploy
+3. Duration: 20 min · Wed + Thu · 14:00–18:00
+4. Copy the public booking page URL
+5. Paste into docs/config.js → GOOGLE_CALENDAR_EMBED
+6. npm run deploy
 
-Note: Taken slots disappear automatically — others only see open times.
+See also: cowork/CALENDAR-5MIN.txt
 
-PART 3 — Form confirmation (optional)
--------------------------------------
-After submit message:
-  "Thanks! Scroll down on the same page to book your interview slot."
+PART 3 — Verify
+----------------
+npm run verify
 
-DO NOT use external link buttons — everything embedded on site.
+DO NOT use external Calendly/Tally — everything on the Firebase site.

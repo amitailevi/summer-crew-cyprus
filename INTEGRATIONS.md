@@ -18,14 +18,16 @@ Candidate
 | FormSubmit | Form → email | `APPLY_FORM_EMAIL` | ⏸ activate on 1st submit |
 | Google Calendar | Interview slots | `GOOGLE_CALENDAR_EMBED` | ⏸ URL pending |
 | Facebook Page | Social + Messenger | `FACEBOOK_PAGE` | ✅ |
-| GitHub | Code source | repo main | ⏸ local commits unpushed |
+| GitHub | Code source | repo main | ✅ |
 | Cloudflare | Custom domain | `CUSTOM_DOMAIN` | ⏸ payment |
 
 ## Deploy pipeline
 
 ```bash
-./scripts/deploy.sh          # hosting only
-./scripts/verify-site.sh     # smoke checks (no email sent)
+npm run deploy               # hosting only
+npm run verify               # local + live smoke (no email sent)
+npm run verify:local         # repo files only
+./scripts/deploy.sh          # same as npm run deploy
 ```
 
 ## When domain is ready

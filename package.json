@@ -2,13 +2,14 @@
   "name": "cyprus-recruitment",
   "version": "1.0.0",
   "description": "Official website & recruitment materials for education/training crew in Limassol, Cyprus.",
-  "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
     "deploy": "npx firebase deploy --only hosting",
-    "verify": "bash scripts/verify-site.sh all"
+    "verify": "bash scripts/verify-site.sh all",
+    "verify:local": "bash scripts/verify-site.sh local",
+    "verify:live": "bash scripts/verify-site.sh live"
   },
   "keywords": [],
   "author": "",
