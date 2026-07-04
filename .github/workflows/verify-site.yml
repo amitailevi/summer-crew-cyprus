@@ -3,7 +3,7 @@ name: verify-site
 on:
   push:
     branches: [main]
-    paths: ['docs/**', 'firebase.json', 'scripts/**']
+    paths: ['docs/**', 'firebase.json', 'scripts/**', 'package.json', 'website/**', 'operations/**']
   workflow_dispatch:
 
 jobs:

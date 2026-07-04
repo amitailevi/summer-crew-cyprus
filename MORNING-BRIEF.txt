@@ -5,11 +5,11 @@
 GitHub: github.com/amitailevi/summer-crew-cyprus (main)
 פייסבוק: profile.php?id=61591410037417
 
-מה נעשה בלילה (מחזורים 1–5):
+מה נעשה בלילה (מחזורים 1–8):
   • אתר: SEO, JSON-LD, טופס UX, Calendar/Messenger connectors
+  • JS מודולרי: config.js + scc-core.js + site.js
   • תשתית: INTEGRATIONS.md, deploy.sh, CI verify, Firebase headers
-  • תיעוד: איחוד מייל, ADS-READY-GO, tracker, פרוטוקולים
-  • deploy + git push
+  • deploy + git push (main @ ff08349+)
 
 3 דקות שלך:
   1. CALENDAR-5MIN.txt → config.js → npm run deploy

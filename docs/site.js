@@ -127,9 +127,19 @@
 
       SCC.trimFormFields(els.form);
 
+      var requiredNames = [
+        "full_name", "passport", "birth_year", "parents_address",
+        "mobile", "email", "english_level", "time_in_cyprus"
+      ];
+      if (!SCC.requireFormFields(els.form, requiredNames)) {
+        els.form.reportValidity();
+        return;
+      }
+
       var btn = els.form.querySelector('button[type="submit"]');
       var englishLevel = els.form.querySelector('[name="english_level"]');
       var emailEl = els.form.querySelector('[name="email"]');
+      var replyTo = els.form.querySelector('[name="_replyto"]');
       var year = els.birthYear ? parseInt(els.birthYear.value, 10) : NaN;
 
       if (!SCC.isValidBirthYear(year, nowYear)) {
@@ -156,6 +166,8 @@
         return;
       }
       if (emailEl) emailEl.setCustomValidity("");
+
+      if (replyTo && emailEl) replyTo.value = emailEl.value.trim();
 
       submitting = true;
       if (btn) {

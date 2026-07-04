@@ -53,6 +53,12 @@
     if (ogUrl) ogUrl.setAttribute("content", base + "/");
     if (ogImg) ogImg.setAttribute("content", base + "/assets/cover-with-logo-slogan.png");
     if (canonical) canonical.setAttribute("href", base + "/");
+    var twTitle = document.getElementById("meta-twitter-title");
+    var twDesc = document.getElementById("meta-twitter-desc");
+    var twImg = document.getElementById("meta-twitter-image");
+    if (twTitle) twTitle.setAttribute("content", "Summer Crew Cyprus — Learn. Lead. Earn.");
+    if (twDesc) twDesc.setAttribute("content", "Paid hotel work in Limassol. Ages 16–21. Training first — not a vacation.");
+    if (twImg) twImg.setAttribute("content", base + "/assets/cover-with-logo-slogan.png");
     var ld = document.querySelector('script[type="application/ld+json"]');
     if (ld) {
       try {
@@ -185,6 +191,18 @@
     return selectEl && selectEl.value && selectEl.value.trim() !== "";
   }
 
+  function isNonEmpty(value) {
+    return typeof value === "string" && value.trim().length > 0;
+  }
+
+  function requireFormFields(form, names) {
+    for (var i = 0; i < names.length; i++) {
+      var el = form.querySelector('[name="' + names[i] + '"]');
+      if (!el || !isNonEmpty(String(el.value || ""))) return false;
+    }
+    return true;
+  }
+
   global.SCC = {
     FALLBACK: FALLBACK,
     SUBMIT_TIMEOUT_MS: SUBMIT_TIMEOUT_MS,
@@ -202,6 +220,8 @@
     isValidEnglishLevel: isValidEnglishLevel,
     isValidEmail: isValidEmail,
     isSafeHttpUrl: isSafeHttpUrl,
+    isNonEmpty: isNonEmpty,
+    requireFormFields: requireFormFields,
     setCalendarFallback: setCalendarFallback
   };
 })(window);
