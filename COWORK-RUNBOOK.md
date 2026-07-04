@@ -378,7 +378,7 @@ git push
 4. Duration: **20 min**, buffer: **0**
 5. Hours: **Wed 14:00–18:00**, **Thu 14:00–18:00** (Tue closed)
 6. Copy booking page link
-7. Paste into `docs/config.js` → `GOOGLE_CALENDAR_URL`
+7. Paste into `docs/config.js` → `GOOGLE_CALENDAR_EMBED` (see `cowork/CALENDAR-5MIN.txt`)
 8. In Google Form confirmation message add:
    `Book your interview:` + Calendar link
 9. Push to GitHub

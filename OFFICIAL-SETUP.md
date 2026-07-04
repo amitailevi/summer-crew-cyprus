@@ -7,16 +7,17 @@
         ↓
 GitHub Pages (אחסון אתר)  או  Firebase Hosting (Google)
         ↓
-Google Forms (הגשת מועמדות → Google Sheets)
+Google Form inline on site (FormSubmit → Gmail)
         ↓
 Google Calendar Appointments (תיאום ראיון 14–18)
         ↓
-Gmail summercrewcyprus@gmail.com (התראות)
+Gmail summercrewcyprus@gmail.com (התראות + FormSubmit)
         ↓
 Facebook Page (שיווק)
 ```
 
-**אין FormSubmit. אין Tally. אין Calendly.**
+**אתר חי:** `docs/` → Firebase Hosting → summer-crew-cyprus.web.app
+**טופס:** FormSubmit AJAX → `summercrewcyprus@gmail.com` (ראה `INTEGRATIONS.md`)
 
 ---
 
@@ -92,7 +93,7 @@ Facebook Page (שיווק)
 4. Duration: 20 min, buffer: 0
 5. Hours: Wed 14–18, Thu 14–18
 6. העתק **booking page link**
-7. הדבק ב-`docs/config.js` → `GOOGLE_CALENDAR_URL`
+5. הדבק ב-`docs/config.js` → `GOOGLE_CALENDAR_EMBED` (ראה `cowork/CALENDAR-5MIN.txt`)
 
 ---
 

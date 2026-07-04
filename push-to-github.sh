@@ -1,25 +1,25 @@
 #!/bin/bash
-# Run in Mac Terminal (where gh auth status shows ✓ Logged in)
-set -e
+# Push current branch to GitHub (does NOT re-init git)
+set -euo pipefail
+cd "$(dirname "$0")"
 
-cd /Users/levi/cyprus-recruitment
+if ! git rev-parse --git-dir >/dev/null 2>&1; then
+  echo "Not a git repo. Run: git init -b main && git remote add origin ..."
+  exit 1
+fi
 
-echo "→ git init..."
-rm -rf .git 2>/dev/null || true
-git init -b main
-
-echo "→ staging files..."
 git add -A
-
-echo "→ commit..."
-git commit -m "$(cat <<'EOF'
-Summer Crew Cyprus — site, Firebase, docs, apply flow
+if git diff --cached --quiet; then
+  echo "Nothing to commit."
+else
+  git commit -m "$(cat <<'EOF'
+Summer Crew Cyprus — site updates
 
 Live: https://summer-crew-cyprus.web.app
 EOF
 )"
+fi
 
-echo "→ create repo + push..."
 if gh repo view amitailevi/summer-crew-cyprus &>/dev/null; then
   git remote add origin https://github.com/amitailevi/summer-crew-cyprus.git 2>/dev/null || git remote set-url origin https://github.com/amitailevi/summer-crew-cyprus.git
   git push -u origin main
@@ -27,5 +27,4 @@ else
   gh repo create summer-crew-cyprus --public --source=. --remote=origin --push --description "Summer Crew Cyprus — youth hotel training recruitment, Limassol"
 fi
 
-echo ""
-echo "✅ DONE: https://github.com/amitailevi/summer-crew-cyprus"
+echo "Done: https://github.com/amitailevi/summer-crew-cyprus"

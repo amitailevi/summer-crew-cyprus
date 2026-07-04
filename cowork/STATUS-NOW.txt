@@ -1,4 +1,4 @@
-SUMMER CREW CYPRUS — סטטוס (4 ביולי 2026)
+SUMMER CREW CYPRUS — סטטוס (5 ביולי 2026)
 ================================================================
 
 כלל עבודה: Cursor מדמה אמיתי לוי — לא פונה לאף אדם. רק בונה מוצר.
@@ -25,7 +25,8 @@ Gmail: summercrewcyprus@gmail.com
   • Google Calendar URL → config.js (ראה CALENDAR-5MIN.txt)
   • מודעות — GO מאמיתי
 
-לילה אוטונומי (מחזור 2–5):
+לילה אוטונומי (מחזור 2–6):
   ✅ אינטגרציות · CI · מודעות GO-ready · איחוד מייל
   ✅ Messenger reply מעודכן · npm run deploy/verify
   ✅ MORNING-BRIEF · PRODUCT-READY מעודכן
+  ✅ טופס AJAX — pending/success/error · deploy נבדק live

@@ -7,8 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "deploy": "firebase deploy --only hosting",
-    "verify": "bash scripts/verify-site.sh"
+    "deploy": "npx firebase deploy --only hosting",
+    "verify": "bash scripts/verify-site.sh all"
   },
   "keywords": [],
   "author": "",

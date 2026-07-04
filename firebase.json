@@ -12,8 +12,16 @@
         "headers": [{ "key": "Cache-Control", "value": "public,max-age=604800" }]
       },
       {
+        "source": "/config.js",
+        "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
+      },
+      {
         "source": "**/*.@(js|css)",
         "headers": [{ "key": "Cache-Control", "value": "public,max-age=3600" }]
+      },
+      {
+        "source": "/index.html",
+        "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
       },
       {
         "source": "**",
@@ -25,7 +33,7 @@
     ],
     "rewrites": [
       {
-        "source": "**",
+        "source": "!/@(js|css|png|jpg|jpeg|webp|svg|ico|xml|txt|map)",
         "destination": "/index.html"
       }
     ]

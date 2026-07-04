@@ -9,15 +9,38 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Summer Crew Cyprus — Learn. Lead. Earn." />
   <meta property="og:description" content="Paid hotel work in Limassol. Ages 16–21. Training first — not a vacation." />
-  <meta property="og:url" content="https://summer-crew-cyprus.web.app" />
-  <meta property="og:image" content="https://summer-crew-cyprus.web.app/assets/cover-with-logo-slogan.png" />
+  <meta property="og:url" content="https://summer-crew-cyprus.web.app/" id="meta-og-url" />
+  <meta property="og:image" content="https://summer-crew-cyprus.web.app/assets/cover-with-logo-slogan.png" id="meta-og-image" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="canonical" href="https://summer-crew-cyprus.web.app/" />
+  <link rel="canonical" href="https://summer-crew-cyprus.web.app/" id="meta-canonical" />
   <link rel="icon" href="assets/logo-summer-crew-cyprus.png" type="image/png" />
   <link rel="apple-touch-icon" href="assets/logo-summer-crew-cyprus.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://formsubmit.co" />
   <link rel="dns-prefetch" href="https://www.facebook.com" />
+  <script src="config.js"></script>
+  <script>
+    (function () {
+      var SITE = "https://summer-crew-cyprus.web.app";
+      var c = Object.assign({ SITE_URL: SITE }, window.SCC_CONFIG || {});
+      var base = (c.SITE_URL || SITE).replace(/\/$/, "");
+      var ogUrl = document.getElementById("meta-og-url");
+      var ogImg = document.getElementById("meta-og-image");
+      var canonical = document.getElementById("meta-canonical");
+      if (ogUrl) ogUrl.setAttribute("content", base + "/");
+      if (ogImg) ogImg.setAttribute("content", base + "/assets/cover-with-logo-slogan.png");
+      if (canonical) canonical.setAttribute("href", base + "/");
+      var ld = document.querySelector('script[type="application/ld+json"]');
+      if (ld) {
+        try {
+          var j = JSON.parse(ld.textContent);
+          j.url = base + "/";
+          j.logo = base + "/assets/logo-summer-crew-cyprus.png";
+          ld.textContent = JSON.stringify(j);
+        } catch (e) {}
+      }
+    })();
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -304,6 +327,28 @@
       justify-content: center;
     }
     .embed-placeholder strong { color: var(--ink); display: block; margin-bottom: .5rem; }
+    .embed-placeholder a { color: var(--ocean); font-weight: 700; }
+    .form-err {
+      background: #fef2f2;
+      border: 2px solid #fca5a5;
+      color: #991b1b;
+      padding: 1rem;
+      border-radius: .5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .form-pending {
+      background: #fffbeb;
+      border: 2px solid #fcd34d;
+      color: #92400e;
+      padding: 1rem;
+      border-radius: .5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .form-pending a { color: var(--ocean); font-weight: 700; }
 
     .apply-form { padding: .5rem 0 0; }
     .apply-form label {
@@ -357,8 +402,8 @@
 
   <div class="wrap">
     <nav class="nav">
-      <a class="nav-logo" href="#">
-        <img src="assets/logo-summer-crew-cyprus.png" alt="" width="44" height="44" />
+      <a class="nav-logo" href="/">
+        <img src="assets/logo-summer-crew-cyprus.png" alt="Summer Crew Cyprus logo" width="44" height="44" />
         <span>Summer Crew Cyprus</span>
       </a>
       <a class="nav-cta" href="#apply">Apply →</a>
@@ -417,12 +462,14 @@
         <h3>Your details</h3>
         <p>Fill in below — we get it by email instantly.</p>
         <div id="form-sent-msg" class="form-ok" hidden>✓ Sent! Now pick your interview time below ↓</div>
-        <form class="apply-form" id="apply-form" method="POST">
+        <div id="form-pending-msg" class="form-pending" hidden>Email setup finishing — message <strong>APPLY</strong> on <a id="form-pending-messenger" href="#" target="_blank" rel="noopener">Messenger</a> with your name so we don't miss you, then book below ↓</div>
+        <div id="form-err-msg" class="form-err" hidden>Something went wrong. Try again or message us <strong>APPLY</strong> on <a id="form-err-messenger" href="#" target="_blank" rel="noopener">Messenger</a>.</div>
+        <form class="apply-form" id="apply-form" method="POST" action="https://formsubmit.co/ajax/summercrewcyprus@gmail.com">
           <input type="hidden" name="_subject" value="New application — Summer Crew Cyprus" />
           <input type="hidden" name="_template" value="table" />
           <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_autoresponse" value="Thanks! Your application was received. Book your interview slot on the same page (Step 2) or we'll message you soon. — Summer Crew Cyprus" />
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
-          <input type="hidden" name="_next" id="form-next-url" value="" />
 
           <label for="full_name">Full name</label>
           <input type="text" id="full_name" name="full_name" required autocomplete="name" />
@@ -431,7 +478,7 @@
           <input type="text" id="passport" name="passport" required />
 
           <label for="birth_year">Birth year</label>
-          <input type="number" id="birth_year" name="birth_year" min="1998" max="2010" required placeholder="e.g. 2006" />
+          <input type="number" id="birth_year" name="birth_year" required placeholder="e.g. 2006" />
 
           <label for="parents_address">Parents address</label>
           <input type="text" id="parents_address" name="parents_address" required />
@@ -472,29 +519,125 @@
     · <a id="fb-footer" href="https://www.facebook.com/profile.php?id=61591410037417" target="_blank" rel="noopener">Facebook</a>
   </footer>
 
-  <script src="config.js"></script>
   <script>
-    if (window.SCC_CONFIG) {
-      const c = window.SCC_CONFIG;
+    (function () {
+      const DEFAULTS = {
+        APPLY_FORM_EMAIL: "summercrewcyprus@gmail.com",
+        GOOGLE_CALENDAR_EMBED: "",
+        GOOGLE_CALENDAR_URL: "",
+        FACEBOOK_PAGE: "https://www.facebook.com/profile.php?id=61591410037417",
+        MESSENGER_URL: "https://www.facebook.com/messages/t/61591410037417",
+        CONTACT_EMAIL: "summercrewcyprus@gmail.com",
+        SITE_URL: location.origin + "/"
+      };
+      const c = Object.assign({}, DEFAULTS, window.SCC_CONFIG || {});
+
       document.getElementById('fb-footer').href = c.FACEBOOK_PAGE;
       document.querySelector('.btn-secondary').href = c.FACEBOOK_PAGE;
+      document.getElementById('form-pending-messenger').href = c.MESSENGER_URL;
+      document.getElementById('form-err-messenger').href = c.MESSENGER_URL;
       document.getElementById('email-footer').href = 'mailto:' + c.CONTACT_EMAIL;
       document.getElementById('email-footer').textContent = c.CONTACT_EMAIL;
       document.getElementById('site-footer').href = c.SITE_URL;
-      document.getElementById('site-footer').textContent = c.SITE_URL.replace('https://', '');
+      document.getElementById('site-footer').textContent = c.SITE_URL.replace(/^https?:\/\//, '');
 
       const toEmail = c.APPLY_FORM_EMAIL || c.CONTACT_EMAIL;
       const form = document.getElementById('apply-form');
-      form.action = 'https://formsubmit.co/' + encodeURIComponent(toEmail);
+      const formAction = 'https://formsubmit.co/ajax/' + encodeURIComponent(toEmail);
+      form.action = formAction;
 
-      if (new URLSearchParams(location.search).get('sent') === '1') {
-        document.getElementById('form-sent-msg').hidden = false;
-        document.getElementById('book').scrollIntoView({ behavior: 'smooth' });
+      const birthYear = document.getElementById('birth_year');
+      const y = new Date().getFullYear();
+      birthYear.min = String(y - 21);
+      birthYear.max = String(y - 16);
+      birthYear.title = 'Ages 16–21 only';
+
+      function hideFormMsgs() {
+        document.getElementById('form-sent-msg').hidden = true;
+        document.getElementById('form-pending-msg').hidden = true;
+        document.getElementById('form-err-msg').hidden = true;
       }
 
-      form.addEventListener('submit', function () {
+      function showSent() {
+        hideFormMsgs();
+        document.getElementById('form-sent-msg').hidden = false;
+        document.getElementById('book').scrollIntoView({ behavior: 'smooth' });
+        try { sessionStorage.setItem('scc_sent', '1'); } catch (e) {}
+      }
+
+      function showPending() {
+        hideFormMsgs();
+        document.getElementById('form-pending-msg').hidden = false;
+        document.getElementById('book').scrollIntoView({ behavior: 'smooth' });
+        try { sessionStorage.setItem('scc_sent', 'pending'); } catch (e) {}
+      }
+
+      function formSubmitOk(data) {
+        return data && (data.success === true || data.success === 'true');
+      }
+
+      function formNeedsActivation(data) {
+        if (!data || !(data.success === false || data.success === 'false')) return false;
+        const msg = String(data.message || '').toLowerCase();
+        return msg.indexOf('activ') !== -1;
+      }
+
+      const sentParam = new URLSearchParams(location.search).get('sent');
+      if (sentParam === '1') {
+        showSent();
+      } else if (sentParam === 'pending') {
+        showPending();
+      } else {
+        try {
+          const stored = sessionStorage.getItem('scc_sent');
+          if (stored === '1') showSent();
+          else if (stored === 'pending') showPending();
+        } catch (e) {}
+      }
+
+      form.addEventListener('submit', function (ev) {
+        ev.preventDefault();
         const btn = form.querySelector('button[type="submit"]');
+        const err = document.getElementById('form-err-msg');
+        const year = parseInt(birthYear.value, 10);
+        if (!year || year < y - 21 || year > y - 16) {
+          birthYear.setCustomValidity('Must be age 16–21');
+          birthYear.reportValidity();
+          return;
+        }
+        birthYear.setCustomValidity('');
         if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+        hideFormMsgs();
+
+        fetch(formAction, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' }
+        }).then(function (res) {
+          if (!res.ok) throw new Error('submit failed');
+          return res.json();
+        }).then(function (data) {
+          if (formSubmitOk(data)) {
+            if (btn) { btn.textContent = 'Sent ✓'; }
+            showSent();
+            if (history.replaceState) {
+              history.replaceState(null, '', (c.SITE_URL || location.origin + '/').replace(/\/?$/, '/') + '?sent=1#book');
+            }
+            return;
+          }
+          if (formNeedsActivation(data)) {
+            if (btn) { btn.textContent = 'Submitted ✓'; btn.disabled = true; }
+            showPending();
+            if (history.replaceState) {
+              history.replaceState(null, '', (c.SITE_URL || location.origin + '/').replace(/\/?$/, '/') + '?sent=pending#book');
+            }
+            return;
+          }
+          throw new Error(data && data.message ? data.message : 'submit rejected');
+        }).catch(function () {
+          if (btn) { btn.disabled = false; btn.textContent = 'Send application →'; }
+          err.hidden = false;
+        });
       });
 
       function calendarEmbedUrl(url) {
@@ -505,22 +648,21 @@
         return url;
       }
 
-      const siteBase = c.SITE_URL || (location.origin + '/');
-      document.getElementById('form-next-url').value = siteBase.replace(/\/?$/, '/') + '?sent=1#book';
-
-      const calRaw = c.GOOGLE_CALENDAR_EMBED || '';
-      const calUrl = calendarEmbedUrl(calRaw) || (c.GOOGLE_CALENDAR_URL !== 'https://calendar.google.com/' ? c.GOOGLE_CALENDAR_URL : '');
+      const calRaw = c.GOOGLE_CALENDAR_EMBED || c.GOOGLE_CALENDAR_URL || '';
+      const calUrl = calendarEmbedUrl(calRaw);
       if (calUrl) {
         const iframe = document.getElementById('calendar-embed');
         const placeholder = document.getElementById('calendar-placeholder');
         iframe.src = calUrl;
         iframe.hidden = false;
         placeholder.hidden = true;
-      } else if (c.MESSENGER_URL) {
+      } else {
         const ph = document.getElementById('calendar-placeholder');
-        ph.innerHTML = '<div><strong>Calendar coming soon</strong>DM us <strong>APPLY</strong> on <a href="' + c.MESSENGER_URL + '" target="_blank" rel="noopener">Messenger</a> to book</div>';
+        ph.innerHTML = '<div><strong>Book your interview</strong>Calendar slots coming online soon.<br/><br/>' +
+          'Message <strong>APPLY</strong> on <a href="' + c.MESSENGER_URL + '" target="_blank" rel="noopener">Messenger</a> ' +
+          'or <a href="' + c.FACEBOOK_PAGE + '" target="_blank" rel="noopener">Facebook</a> — we\'ll send your slot link.</div>';
       }
-    }
+    })();
   </script>
 </body>
 </html>

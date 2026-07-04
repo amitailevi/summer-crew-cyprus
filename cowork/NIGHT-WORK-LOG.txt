@@ -87,3 +87,24 @@
 
 פעולה הבאה:
   → לולאה שקטה — Calendar / FormSubmit / דומיין
+
+────────────────────────────────────────
+[דוח עבודת לילה — מחזור 6]
+
+החלטה מבוססת מייל: [SELF-AUTHORIZED]
+  • FormSubmit מחזיר success:"false" עם HTTP 200 לפני activation — לא להציג "Sent!" שקרי.
+  • fallback Messenger בכל מצבי שגיאה/pending.
+
+התקדמות אוטונומית:
+  ✅ AJAX form — נשאר בדף, scroll ל-Step 2
+  ✅ תיקון validation JSON (success true/false)
+  ✅ הודעת pending צהובה + קישור Messenger כש-FormSubmit לא activated
+  ✅ birth year דינמי 16–21 + client-side check
+  ✅ config.js fallbacks · firebase rewrite static files · index no-cache
+  ✅ verify-site.sh מורחב · CI workflow מעודכן
+  ✅ deploy live — נבדק בדפדפן (?sent=pending#book)
+
+פעולה הבאה:
+  → FormSubmit activate ב-summercrewcyprus@gmail.com (קליק במייל)
+  → Google Calendar URL ב-config.js (חשבון פרויקט)
+  → דומיין Cloudflare
