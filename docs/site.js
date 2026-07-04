@@ -50,6 +50,7 @@
   }
 
   var formAction = SCC.formActionUrl(c);
+  var submitting = false;
   if (els.form) els.form.action = formAction;
 
   if (els.birthYear) {
@@ -88,14 +89,16 @@
     SCC.storageSet("scc_sent", "pending");
   }
 
-  function showError(detail) {
+  function showError(kind) {
     hideFormMsgs();
-    if (els.errMsg) {
-      if (detail && els.errMsg.dataset) {
-        els.errMsg.dataset.lastError = detail;
-      }
-      els.errMsg.hidden = false;
+    if (!els.errMsg) return;
+    var textEl = els.errMsg.querySelector("[data-err-text]");
+    if (textEl) {
+      textEl.textContent = kind === "timeout"
+        ? "Request timed out. Check your connection and try again,"
+        : "Something went wrong. Try again";
     }
+    els.errMsg.hidden = false;
   }
 
   function restoreFormState() {
@@ -112,11 +115,15 @@
   if (els.form) {
     els.form.addEventListener("submit", function (ev) {
       ev.preventDefault();
+      if (submitting) return;
 
       var honey = els.form.querySelector('input[name="_honey"]');
       if (honey && honey.value) return; /* bot — silent drop */
 
+      SCC.trimFormFields(els.form);
+
       var btn = els.form.querySelector('button[type="submit"]');
+      var englishLevel = els.form.querySelector('[name="english_level"]');
       var year = els.birthYear ? parseInt(els.birthYear.value, 10) : NaN;
 
       if (!SCC.isValidBirthYear(year, nowYear)) {
@@ -128,6 +135,16 @@
       }
       if (els.birthYear) els.birthYear.setCustomValidity("");
 
+      if (!SCC.isValidEnglishLevel(englishLevel)) {
+        if (englishLevel) {
+          englishLevel.setCustomValidity("Choose your English level");
+          englishLevel.reportValidity();
+        }
+        return;
+      }
+      if (englishLevel) englishLevel.setCustomValidity("");
+
+      submitting = true;
       if (btn) {
         btn.disabled = true;
         btn.textContent = "Sending…";
@@ -144,7 +161,10 @@
           clearTimeout(timeoutId);
           var status = SCC.parseFormSubmitResponse(data);
           if (status === "success") {
-            if (btn) btn.textContent = "Sent ✓";
+            if (btn) {
+              btn.textContent = "Sent ✓";
+              btn.disabled = true;
+            }
             showSent();
             updateUrlSent("1");
             return;
@@ -162,14 +182,13 @@
         })
         .catch(function (err) {
           clearTimeout(timeoutId);
+          submitting = false;
           if (btn) {
             btn.disabled = false;
             btn.textContent = "Send application →";
           }
-          var detail = err && err.name === "AbortError"
-            ? "timeout"
-            : (err && err.message) || "unknown";
-          showError(detail);
+          var kind = err && err.name === "AbortError" ? "timeout" : "error";
+          showError(kind);
         });
     });
   }

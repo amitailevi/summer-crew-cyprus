@@ -13,6 +13,7 @@ When a candidate applies on the site, FormSubmit emails `summercrewcyprus@gmail.
 | english_level | english_level |
 | time_in_cyprus | time_in_cyprus |
 | (manual) | source = website |
+| (manual) | interview_slot |
 | (manual) | status = new |
 
 Copy each application row into `operations/CANDIDATES-TRACKER.csv`.

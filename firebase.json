@@ -33,7 +33,7 @@
     ],
     "rewrites": [
       {
-        "source": "**",
+        "source": "!/@(js|css|png|jpg|jpeg|webp|svg|ico|xml|txt|map)",
         "destination": "/index.html"
       }
     ]

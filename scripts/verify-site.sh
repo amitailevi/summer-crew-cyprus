@@ -25,6 +25,9 @@ verify_local() {
   grep -q 'id="apply-form"' "$ROOT/docs/index.html" || { echo "index.html: missing apply form"; exit 1; }
   grep -q "scc-core.js" "$ROOT/docs/index.html" || { echo "index.html: missing scc-core.js"; exit 1; }
   grep -q "parseFormSubmitResponse" "$ROOT/docs/scc-core.js" || { echo "scc-core.js: missing form parser"; exit 1; }
+  grep -q "trimFormFields" "$ROOT/docs/scc-core.js" || { echo "scc-core.js: missing trimFormFields"; exit 1; }
+  grep -q "english_level" "$ROOT/docs/index.html" || { echo "index.html: missing english_level"; exit 1; }
+  grep -q '!/@(js|css' "$ROOT/firebase.json" || { echo "firebase.json: static rewrite guard missing"; exit 1; }
   grep -q "AbortController" "$ROOT/docs/site.js" || { echo "site.js: missing submit timeout"; exit 1; }
   echo "local: OK"
 }

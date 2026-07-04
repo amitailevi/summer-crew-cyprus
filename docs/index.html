@@ -440,7 +440,10 @@
         <p>Fill in below — we get it by email instantly.</p>
         <div id="form-sent-msg" class="form-ok" hidden>✓ Sent! Now pick your interview time below ↓</div>
         <div id="form-pending-msg" class="form-pending" hidden>Email setup finishing — message <strong>APPLY</strong> on <a id="form-pending-messenger" href="#" target="_blank" rel="noopener">Messenger</a> with your name so we don't miss you, then book below ↓</div>
-        <div id="form-err-msg" class="form-err" hidden>Something went wrong. Try again or message us <strong>APPLY</strong> on <a id="form-err-messenger" href="#" target="_blank" rel="noopener">Messenger</a>.</div>
+        <div id="form-err-msg" class="form-err" hidden><span data-err-text>Something went wrong. Try again</span> or message <strong>APPLY</strong> on <a id="form-err-messenger" href="#" target="_blank" rel="noopener">Messenger</a>.</div>
+        <noscript>
+          <p class="form-pending">JavaScript is required for instant apply. Email <a href="mailto:summercrewcyprus@gmail.com">summercrewcyprus@gmail.com</a> or message <strong>APPLY</strong> on Facebook Messenger.</p>
+        </noscript>
         <form class="apply-form" id="apply-form" method="POST" action="#" novalidate>
           <input type="hidden" name="_subject" value="New application — Summer Crew Cyprus" />
           <input type="hidden" name="_template" value="table" />
@@ -508,8 +511,8 @@
     · <a id="fb-footer" href="https://www.facebook.com/profile.php?id=61591410037417" target="_blank" rel="noopener">Facebook</a>
   </footer>
 
-  <script src="config.js"></script>
-  <script src="scc-core.js"></script>
-  <script src="site.js"></script>
+  <script src="config.js" defer></script>
+  <script src="scc-core.js" defer></script>
+  <script src="site.js" defer></script>
 </body>
 </html>

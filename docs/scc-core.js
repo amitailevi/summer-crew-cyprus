@@ -30,6 +30,9 @@
           : FALLBACK[k];
       }
     }
+    if (raw.CUSTOM_DOMAIN && String(raw.CUSTOM_DOMAIN).trim()) {
+      c.SITE_URL = String(raw.CUSTOM_DOMAIN).replace(/\/$/, "") + "/";
+    }
     if (!c.SITE_URL || c.SITE_URL === "/") {
       c.SITE_URL = global.location && global.location.origin
         ? global.location.origin + "/"
@@ -151,6 +154,21 @@
     container.appendChild(wrap);
   }
 
+  function trimFormFields(form) {
+    var fields = form.querySelectorAll(
+      'input[type="text"], input[type="email"], input[type="tel"], textarea'
+    );
+    for (var i = 0; i < fields.length; i++) {
+      if (fields[i].value && typeof fields[i].value.trim === "function") {
+        fields[i].value = fields[i].value.trim();
+      }
+    }
+  }
+
+  function isValidEnglishLevel(selectEl) {
+    return selectEl && selectEl.value && selectEl.value.trim() !== "";
+  }
+
   global.SCC = {
     FALLBACK: FALLBACK,
     SUBMIT_TIMEOUT_MS: SUBMIT_TIMEOUT_MS,
@@ -164,6 +182,8 @@
     storageSet: storageSet,
     submitApplication: submitApplication,
     isValidBirthYear: isValidBirthYear,
+    trimFormFields: trimFormFields,
+    isValidEnglishLevel: isValidEnglishLevel,
     setCalendarFallback: setCalendarFallback
   };
 })(window);
