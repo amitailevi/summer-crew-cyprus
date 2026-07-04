@@ -1,0 +1,19 @@
+בוקר טוב — סיכום לילה (אוטונומי)
+==================================
+
+מוצר חי: https://summer-crew-cyprus.web.app
+פייסבוק: profile.php?id=61591410037417
+
+מה נעשה בלילה:
+  • SEO/OG/sitemap/JSON-LD + טופס משופר
+  • פרוטוקולים + PRODUCT-READY.md
+  • Firebase deploy
+
+3 דקות שלך:
+  1. CALENDAR-5MIN.txt → יומן ב-config.js → deploy
+  2. טופס בדיקה → אישור FormSubmit במייל
+  3. אשראי → דומיין Cloudflare
+
+לא נגענו: מודעות · פנייה לאנשים · דפים ישראליים
+
+לוג מלא: cowork/NIGHT-WORK-LOG.txt

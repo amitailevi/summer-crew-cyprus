@@ -5,7 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Summer Crew Cyprus — Learn. Lead. Earn.</title>
   <meta name="description" content="Paid summer work in Limassol. Ages 16–21. Training first. Hotel crew." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Summer Crew Cyprus — Learn. Lead. Earn." />
+  <meta property="og:description" content="Paid hotel work in Limassol. Ages 16–21. Training first — not a vacation." />
+  <meta property="og:url" content="https://summer-crew-cyprus.web.app" />
+  <meta property="og:image" content="https://summer-crew-cyprus.web.app/assets/cover-with-logo-slogan.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://summer-crew-cyprus.web.app/" />
+  <link rel="icon" href="assets/logo-summer-crew-cyprus.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/logo-summer-crew-cyprus.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://formsubmit.co" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Summer Crew Cyprus",
+    "url": "https://summer-crew-cyprus.web.app",
+    "logo": "https://summer-crew-cyprus.web.app/assets/logo-summer-crew-cyprus.png",
+    "description": "Paid summer hotel work in Limassol. Ages 16–21. Training first.",
+    "email": "summercrewcyprus@gmail.com",
+    "areaServed": "Limassol, Cyprus"
+  }
+  </script>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
   <style>
     :root {
@@ -307,6 +330,7 @@
       border-color: var(--ocean);
     }
     .apply-form .btn { width: 100%; margin-top: 1.25rem; }
+    .apply-form .btn:disabled { opacity: .7; cursor: wait; }
     .form-ok {
       background: #ecfdf5;
       border: 2px solid #6ee7b7;
@@ -317,6 +341,7 @@
       margin-bottom: 1rem;
       text-align: center;
     }
+    footer {
       text-align: center;
       padding: 2rem 1.25rem 2.5rem;
       font-size: .8rem;
@@ -460,20 +485,39 @@
       const toEmail = c.APPLY_FORM_EMAIL || c.CONTACT_EMAIL;
       const form = document.getElementById('apply-form');
       form.action = 'https://formsubmit.co/' + encodeURIComponent(toEmail);
-      document.getElementById('form-next-url').value = c.SITE_URL + '?sent=1#book';
 
       if (new URLSearchParams(location.search).get('sent') === '1') {
         document.getElementById('form-sent-msg').hidden = false;
         document.getElementById('book').scrollIntoView({ behavior: 'smooth' });
       }
 
-      const calUrl = c.GOOGLE_CALENDAR_EMBED || c.GOOGLE_CALENDAR_URL;
-      if (calUrl && calUrl !== 'https://calendar.google.com/') {
+      form.addEventListener('submit', function () {
+        const btn = form.querySelector('button[type="submit"]');
+        if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+      });
+
+      function calendarEmbedUrl(url) {
+        if (!url || url === 'https://calendar.google.com/') return '';
+        if (url.indexOf('calendar.google.com/calendar/appointments') !== -1 && url.indexOf('gv=true') === -1) {
+          return url + (url.indexOf('?') !== -1 ? '&' : '?') + 'gv=true';
+        }
+        return url;
+      }
+
+      const siteBase = c.SITE_URL || (location.origin + '/');
+      document.getElementById('form-next-url').value = siteBase.replace(/\/?$/, '/') + '?sent=1#book';
+
+      const calRaw = c.GOOGLE_CALENDAR_EMBED || '';
+      const calUrl = calendarEmbedUrl(calRaw) || (c.GOOGLE_CALENDAR_URL !== 'https://calendar.google.com/' ? c.GOOGLE_CALENDAR_URL : '');
+      if (calUrl) {
         const iframe = document.getElementById('calendar-embed');
         const placeholder = document.getElementById('calendar-placeholder');
         iframe.src = calUrl;
         iframe.hidden = false;
         placeholder.hidden = true;
+      } else if (c.MESSENGER_URL) {
+        const ph = document.getElementById('calendar-placeholder');
+        ph.innerHTML = '<div><strong>Calendar coming soon</strong>DM us <strong>APPLY</strong> on <a href="' + c.MESSENGER_URL + '" target="_blank" rel="noopener">Messenger</a> to book</div>';
       }
     }
   </script>

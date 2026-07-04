@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://summer-crew-cyprus.web.app/sitemap.xml

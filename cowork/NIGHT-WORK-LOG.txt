@@ -1,0 +1,36 @@
+[דוח עבודת לילה — 4–5 ביולי 2026 — סיום מחזור]
+
+החלטה מבוססת מייל: [SELF-AUTHORIZED]
+  • לילה = שקט מוחלט. אין פנייה למשתמש.
+  • שפר שיתוף/SEO (OG, favicon, sitemap) — מוצר מקצועי לפני מודעות.
+  • Calendar + FormSubmit — תשתית מוכנה, ממתין ל-URL/activation (לא ממציאים).
+
+התקדמות אוטונומית:
+  ✅ OG/Twitter meta + favicon + theme-color (index.html)
+  ✅ robots.txt + sitemap.xml
+  ✅ config.js — הערות Calendar
+  ✅ CALENDAR-5MIN.txt · NIGHT-AUTONOMOUS-PROTOCOL.md
+  ✅ Firebase deploy — 8 קבצים live
+  ✅ אתר: https://summer-crew-cyprus.web.app
+
+פעולה הבאה (אין צורך בקלט):
+  → ממתין: דומיין + אשראי + Calendar URL + FormSubmit activate
+  → אופציונלי: תמונות לפוסטי FB
+  → מודעות: GO בלבד
+
+────────────────────────────────────────
+[דוח עבודת לילה — מחזור 2]
+
+החלטה מבוססת מייל: [SELF-AUTHORIZED]
+  • סגור פערים במוצר: JSON-LD, canonical, UX טופס, רשימת בוקר.
+  • הכן מפת תמונות FB — בלי להעלות (Cowork/ידני).
+
+התקדמות אוטונומית:
+  ✅ JSON-LD Organization + canonical + preconnect FormSubmit
+  ✅ טופס: מצב Sending… בלחיצה
+  ✅ PRODUCT-READY.md · MORNING-BRIEF.txt · FB-IMAGES-MAP.txt
+  ✅ Firebase deploy
+
+פעולה הבאה:
+  → סנכרון Desktop cowork · עדכון STATUS
+  → המתנה לקלט אנושי (דומיין/יומן/FormSubmit)

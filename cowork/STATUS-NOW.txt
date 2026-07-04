@@ -13,23 +13,19 @@ Gmail: summercrewcyprus@gmail.com
 פייסבוק (Cowork):
   ✅ קאבר, לוגו, השכלה, ביו, קשר (מייל+אתר)
   ✅ פוסטים 1–5 טקסט + Messenger APPLY
-  ⬜ 3 פוסטים ריקים למחיקה
-  ✅ הצמדת פוסט (Real talk — לבדוק אם צריך SUMMER CREW במקום)
-  ⬜ תמונות לפוסטים (אופציונלי)
+  ✅ "ריקים" = עדכוני קאבר/פרופיל (לא ניתן למחוק מ-FB — לא מזיק)
+  ✅ פוסט מוצמד: Real talk (מתאים לגיוס)
+  ⬜ תמונות לפוסטים (אופציונלי — אחר כך)
 
 ⏸️ ממתין
 ---------
   • דומיין + hello@ (אשראי)
   • SIM +357
-  • FormSubmit activate (מייל חד-פעמי)
+  • FormSubmit activate (מייל חד-פעמי — ראה CALENDAR-5MIN.txt)
+  • Google Calendar URL → config.js (ראה CALENDAR-5MIN.txt)
   • מודעות — GO מאמיתי
 
-📧 שאלה (4 ביולי): להמשיך לבד בלי לשאול אמיתי?
-✅ תשובת אמיתי: כן. מדמה אותי. לא פונים לאף אדם. רק מוצר.
-→ ביצעתי: הצמדת פוסט מהפיד (הצמדת פוסט) ✅
-
-📧 שאלה: מה עוד בפייסבוק?
-✅ תשובת אמיתי: מחק פוסטים ריקים. תמונות אחר כך. מודעות רק GO.
-→ ממשיך: מחיקת ריקים מהפיד
-
-Cowork: AMITAI-TOMORROW-FB-3MIN.txt (3 דקות ידני בפיד)
+לילה אוטונומי (מחזור 2):
+  ✅ JSON-LD + canonical + טופס UX
+  ✅ PRODUCT-READY.md · MORNING-BRIEF.txt · FB-IMAGES-MAP.txt
+  ✅ deploy live

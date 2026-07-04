@@ -1,0 +1,16 @@
+CLOUDFLARE + FIREBASE — when card works
+========================================
+
+Domain: summercrewcyprus.com (Cloudflare)
+
+1. Pay invoice in Cloudflare dashboard
+2. Firebase Console → Hosting → Add custom domain → summercrewcyprus.com
+3. Copy DNS records Firebase shows → paste in Cloudflare DNS
+4. SSL: Full (strict) — Firebase handles cert
+5. docs/config.js:
+     SITE_URL: "https://summercrewcyprus.com"
+     CUSTOM_DOMAIN: "https://summercrewcyprus.com"
+6. npx firebase deploy --only hosting
+7. Google Workspace / forwarding: hello@ → summercrewcyprus@gmail.com (optional)
+
+No outbound email setup required for MVP — FormSubmit uses project Gmail.

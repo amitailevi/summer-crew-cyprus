@@ -1,35 +1,35 @@
-SUMMER CREW CYPRUS — כללי עבודה (אוטונומי)
-============================================
+SUMMER CREW CYPRUS — Autonomous Workflow
+=========================================
 
-## חוק ברזל
-❌ לא פונים לאף אדם — לא במייל, לא בטלפון, לא בפייסבוק DM למועמדים
-❌ לא שולחים הודעות אמיתיות לאנשים חיצוניים
-✅ רק בונים מוצר: אתר, פייסבוק, חומרים, תשתית
-✅ מדמים את אמיתי לוי כבעל הפרויקט — מחליטים וממשיכים לבד
+Full protocol: **SYSTEM-PROTOCOL.md**  
+Copy-paste prompts: **AUTONOMOUS-PROMPT-PACK.md**
 
-## תהליך החלטה (במקום לשאול את אמיתי)
-לפני כל צעד — "מה אמיתי לוי היה אומר?"
-דווח לוג:
-  📧 שאלתי את המייל (סימולציה): [שאלה]
-  ✅ תשובת אמיתי: [החלטה]
-  → מבצע...
+## Iron rules
 
-אמיתי רק עוקב ומאשר — לא עונה על שאלות שוטפות.
+- ❌ No outbound contact to any human
+- ❌ No permission questions to Amitai
+- ✅ Build product: site, FB materials, infrastructure
+- ✅ Synthesize Amitai's decisions from project context → execute
 
-## מי עושה מה
-| מי | מה |
-|----|-----|
-| Cursor | קוד, אתר, חומרים, תכנון, דפדפן על הפרויקט |
-| Cowork | פייסבוק (העלאה בדפדפן) |
-| אמיתי | אשראי, SMS אימות, גרירת תמונה אם נתקע |
+## Reporting format
 
-## אסור לגעת
-- דפי פייסבוק ישראליים
-- מודעות בתשלום (עד GO מפורש)
-- פנייה למועמדים / לקוחות / ספקים
+```
+EXECUTION: [what was done]
+CONTEXT:   [Gmail synthesis — what Amitai would decide]
+TRAJECTORY: [next task executing now]
+```
 
-## כתובות
-- אתר: https://summer-crew-cyprus.web.app
+## Roles
+
+| Who | What |
+|-----|------|
+| Cursor | Code, site, materials, browser on project assets |
+| Cowork | Facebook upload tasks in browser |
+| Amitai | Credit card, SMS verify, drag image if stuck — no routine questions |
+
+## URLs
+
+- Site: https://summer-crew-cyprus.web.app
 - GitHub: https://github.com/amitailevi/summer-crew-cyprus
-- מייל פרויקט: summercrewcyprus@gmail.com (קבלת טפסים בלבד)
-- פייסבוק: profile.php?id=61591410037417
+- Email: summercrewcyprus@gmail.com (inbound forms only)
+- Facebook: https://www.facebook.com/profile.php?id=61591410037417

@@ -1,0 +1,13 @@
+FB POST → IMAGE MAP (drag from marketing/posts/)
+================================================
+
+Post 1 SUMMER CREW (pin):  01-post-youth-fun.png
+Post 2 Real talk:          02-post-real-talk.png
+Post 3 Education crew:     03-post-education-crew.png
+Post 4 Vibe:               04-post-summer-vibe.png
+Post 5 Interviews:         05-post-interviews.png
+Bonus apply CTA:           06-post-apply-now.png
+
+Path: Summer-Crew-Cyprus-COWORK/marketing/posts/
+
+Cowork: Edit each post → Add photo → drag file → Save
