@@ -113,10 +113,11 @@ Edit file: `/Users/levi/cyprus-recruitment/docs/config.js`
 Replace placeholders:
 ```javascript
 window.SCC_CONFIG = {
-  GOOGLE_FORM_URL: "PASTE_FORM_URL_AFTER_PHASE_2",
-  GOOGLE_CALENDAR_URL: "PASTE_CALENDAR_URL_AFTER_PHASE_2",
+  APPLY_FORM_EMAIL: "summercrewcyprus@gmail.com",
+  GOOGLE_CALENDAR_EMBED: "PASTE_APPOINTMENT_SCHEDULE_URL",
   FACEBOOK_PAGE: "https://www.facebook.com/profile.php?id=61591410037417",
-  CONTACT_EMAIL: "hello@YOUR-DOMAIN.com",
+  MESSENGER_URL: "https://www.facebook.com/messages/t/61591410037417",
+  CONTACT_EMAIL: "summercrewcyprus@gmail.com",
   SITE_URL: "https://www.YOUR-DOMAIN.com"
 };
 ```
@@ -351,22 +352,13 @@ git push
 
 ---
 
-### STEP 12 — Google Form (applications)
+### STEP 12 — Apply form (FormSubmit — already live)
 
-1. Log into Google with **hello@YOUR-DOMAIN.com** (Workspace)
-2. https://forms.google.com → New form
-3. Title: `Summer Crew Cyprus — Apply`
-4. Questions:
-   - Full name (short answer)
-   - Email (short answer)
-   - Age (short answer)
-   - English level (multiple choice: Basic / Good / Fluent)
-   - How long in Cyprus? (short answer)
-   - Why do you want this? (paragraph)
-5. Responses → Link to Sheets
-6. Send → copy short link
-7. Paste into `docs/config.js` → `GOOGLE_FORM_URL`
-8. Push to GitHub
+Site form at `docs/index.html` posts to FormSubmit → `summercrewcyprus@gmail.com`.
+
+One-time: submit test application → click **Activate Form** in project Gmail inbox.
+
+Fields match `operations/CANDIDATES-TRACKER.md`. After activation, deploy not required unless changing `APPLY_FORM_EMAIL` in `docs/config.js`.
 
 ---
 

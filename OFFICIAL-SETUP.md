@@ -65,23 +65,16 @@ Facebook Page (שיווק)
 
 ---
 
-## שלב 4 — Google Form (רשמי)
+## שלב 4 — טופס הגשה (FormSubmit — כבר מוגדר)
 
-1. [forms.google.com](https://forms.google.com) → טופס חדש
-2. שאלות:
-   - Full name
-   - Email
-   - Age
-   - English level
-   - How long in Cyprus?
-   - Why do you want this?
-3. **Responses** → **Link to Sheets** (Google Sheets אוטומטי)
-4. **Send** → העתק קישור קצר
-5. הדבק ב-`docs/config.js` → `GOOGLE_FORM_URL`
+הטופס מוטמע ב-`docs/index.html` ושולח ל-`summercrewcyprus@gmail.com` דרך FormSubmit AJAX.
 
-### אחרי שליחה — redirect ליומן (אופציונלי)
-ב-Google Form → Settings → **Confirmation message**:
-`Now book your interview:` + קישור Google Calendar
+**הפעלה חד-פעמית:**
+1. שלח טופס בדיקה ב-https://summer-crew-cyprus.web.app#apply
+2. כנס ל-`summercrewcyprus@gmail.com` → לחץ **Activate Form** במייל מ-FormSubmit
+3. מעכשיו כל הגשה מגיעה למייל + autoresponse למועמד
+
+שדות הטופס: full name, passport, birth year, parents address, mobile, email.
 
 ---
 

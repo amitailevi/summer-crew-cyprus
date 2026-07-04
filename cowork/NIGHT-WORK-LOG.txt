@@ -108,3 +108,19 @@
   → FormSubmit activate ב-summercrewcyprus@gmail.com (קליק במייל)
   → Google Calendar URL ב-config.js (חשבון פרויקט)
   → דומיין Cloudflare
+
+────────────────────────────────────────
+[דוח עבודת לילה — מחזור 7]
+
+החלטה: [SELF-AUTHORIZED] — תיקון שכבת תשתית + תיעוד, לא רק UI.
+
+התקדמות:
+  ✅ meta og/canonical/JSON-LD דינמיים מ-SCC_CONFIG
+  ✅ config.js no-cache · calendar fallback GOOGLE_CALENDAR_URL
+  ✅ verify-site: local + live · CI בודק repo לפני production
+  ✅ website/ redirect ל-live · push-to-github.sh בטוח
+  ✅ OFFICIAL-SETUP/COWORK-RUNBOOK — מפתח GOOGLE_CALENDAR_EMBED
+  ✅ deploy + git push
+
+חסום (אין סיסמה ל-summercrewcyprus@gmail.com בדפדפן):
+  → FormSubmit activate · Google Calendar URL
