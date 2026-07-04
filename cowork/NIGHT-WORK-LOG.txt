@@ -124,3 +124,15 @@
 
 חסום (אין סיסמה ל-summercrewcyprus@gmail.com בדפדפן):
   → FormSubmit activate · Google Calendar URL
+
+────────────────────────────────────────
+[דוח עבודת לילה — מחזור 8]
+
+החלטה: [SELF-AUTHORIZED] — audit pass 4: אין באגים חדשים בלוגיקה, רק hardening.
+
+התקדמות:
+  ✅ FormSubmit _replyto ← email מועמד
+  ✅ requireFormFields אחרי trim (שדות ריקים)
+  ✅ Twitter meta tags + applyMeta sync
+  ✅ CI paths מורחב · verify guards
+  ✅ deploy + git push 2b68d56
