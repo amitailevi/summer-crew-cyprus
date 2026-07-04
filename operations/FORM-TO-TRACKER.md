@@ -10,6 +10,8 @@ When a candidate applies on the site, FormSubmit emails `summercrewcyprus@gmail.
 | parents_address | parents_address |
 | mobile | mobile |
 | email | email |
+| english_level | english_level |
+| time_in_cyprus | time_in_cyprus |
 | (manual) | source = website |
 | (manual) | status = new |
 
