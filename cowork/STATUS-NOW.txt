@@ -1,41 +1,30 @@
-SUMMER CREW CYPRUS — נקודת עצירה (2 ביולי 2026, סוף יום)
+SUMMER CREW CYPRUS — סטטוס (4 ביולי 2026)
 ================================================================
 
-✅ בוצע היום (Cowork + Cursor)
-------------------------------
-פייסבוק:
-  ✅ קאבר Learn. Lead. Earn.
-  ✅ לוגו
-  ✅ קטגוריה השכלה
-  ✅ ביו (בלי holiday/vacay)
-  ✅ פרטי קשר: summercrewcyprus@gmail.com + summer-crew-cyprus.web.app
-  ✅ פוסט 1 טקסט תוקן
-  ✅ פוסטים 2, 3, 4, 5 פורסמו
-  ✅ Messenger — מילת מפתח APPLY
+כלל עבודה: Cursor מדמה אמיתי לוי — לא פונה לאף אדם. רק בונה מוצר.
+יומן החלטות: DECISION-LOG.txt
 
-אתר + תשתית:
-  ✅ אתר חדש (נקי, צעיר) — summer-crew-cyprus.web.app
-  ✅ טופס פרטים → מייל (FormSubmit)
-  ✅ GitHub — github.com/amitailevi/summer-crew-cyprus
-  ✅ Gmail — summercrewcyprus@gmail.com
-
-⬜ נשאר לידני / מחר — פייסבוק
-------------------------------
-  1. מחק 2 פוסטים ריקים ("ללא תוכן טקסט") — מהפיד בדפדפן רגיל
-  2. הצמד פוסט 1 (SUMMER CREW) לראש — ⋯ → הצמד לראש הדף
-  3. תמונות לפוסטים (אופציונלי) — marketing/posts/ או images/
-
-⏸️ מחר
+✅ מוכן
 -------
-  • דומיין summercrewcyprus.com + hello@ (אשראי Cloudflare)
-  • SIM +357 — PASTE-03-BUY-CYPRUS-SIM.txt
-  • FormSubmit — Activate במייל (אם עדיין לא)
-  • Google Calendar שלב 2 באתר (אופציונלי)
-  • מודעות FB — רק כשאמיתי אומר GO
+אתר: summer-crew-cyprus.web.app (טופס → מייל)
+GitHub: github.com/amitailevi/summer-crew-cyprus
+Gmail: summercrewcyprus@gmail.com
 
-Cowork מחר:
-  • לא צריך PASTE-FB-MASTER מחדש — רק 3 משימות ידניות למעלה
-  • AMITAI-MANUAL-1MIN.txt — גרירת תמונות
+פייסבוק (Cowork):
+  ✅ קאבר, לוגו, השכלה, ביו, קשר (מייל+אתר)
+  ✅ פוסטים 1–5 טקסט + Messenger APPLY
+  ⬜ 3 פוסטים ריקים למחיקה (לא ניתן מספריית תוכן)
+  ⬜ הצמדת פוסט 1
+  ⬜ תמונות לפוסטים (אופציונלי)
 
-תיקייה: /Users/levi/Desktop/Summer-Crew-Cyprus-COWORK/
-קוד: /Users/levi/cyprus-recruitment/
+⏸️ ממתין
+---------
+  • דומיין + hello@ (אשראי)
+  • SIM +357
+  • FormSubmit activate (מייל חד-פעמי)
+  • מודעות — GO מאמיתי
+
+📧 החלטת אמיתי אחרונה (סימולציה):
+  "סיימו מוצר. אל תפנו לאנשים. מחר דומיין. מודעות רק ב-GO."
+
+Cowork: AMITAI-TOMORROW-FB-3MIN.txt (3 דקות ידני בפיד)
