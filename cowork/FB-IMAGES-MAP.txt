@@ -8,6 +8,7 @@ Post 4 Vibe:               04-post-summer-vibe.png
 Post 5 Interviews:         05-post-interviews.png
 Bonus apply CTA:           06-post-apply-now.png
 
-Path: Summer-Crew-Cyprus-COWORK/marketing/posts/
+Path: facebook/creatives/posts/ (in repo)
+Also: ~/Desktop/Summer-Crew-Cyprus-COWORK/marketing/posts/
 
 Cowork: Edit each post → Add photo → drag file → Save

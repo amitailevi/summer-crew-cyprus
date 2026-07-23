@@ -1,21 +1,16 @@
-בוקר טוב — סיכום לילה (אוטונומי)
-==================================
+בוקר / ספרינט נוכחות — מוכן לפעולה
+====================================
 
-מוצר חי: https://summer-crew-cyprus.web.app
-GitHub: github.com/amitailevi/summer-crew-cyprus (main)
-פייסבוק: profile.php?id=61591410037417
+מוצר חי: https://summer-crew-cyprus.web.app#apply
+תוכן מוכן להדבקה: cowork/CONTENT-14DAY-PASTE.txt
+ספרינט 7 ימים: cowork/SPRINT-7DAY.txt
+עכשיו (15 דק): cowork/DO-NOW-15MIN.txt
+IG: cowork/INSTAGRAM-SETUP.txt
+מודעות (רק אחרי GO): facebook/ADS-READY-GO.txt
 
-מה נעשה בלילה (מחזורים 1–8):
-  • אתר: SEO, JSON-LD, טופס UX, Calendar/Messenger connectors
-  • JS מודולרי: config.js + scc-core.js + site.js
-  • תשתית: INTEGRATIONS.md, deploy.sh, CI verify, Firebase headers
-  • deploy + git push (main @ ff08349+)
+תמונות: ~/Desktop/Summer-Crew-Cyprus-COWORK/marketing/posts/
 
-3 דקות שלך:
-  1. CALENDAR-5MIN.txt → config.js → npm run deploy
-  2. טופס בדיקה → אישור FormSubmit במייל
-  3. אשראי → דומיין Cloudflare
-
-לא נגענו: מודעות · פנייה לאנשים · דפים ישראליים
-
-לוג: cowork/NIGHT-WORK-LOG.txt · רשימה: PRODUCT-READY.md
+סדר:
+  Day 0 = FormSubmit + Calendar + תמונות FB
+  Days 1–7 = פוסט ליום מה-CONTENT pack
+  Day 7 = GO למודעות €20/יום

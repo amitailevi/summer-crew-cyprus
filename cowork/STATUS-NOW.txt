@@ -1,4 +1,4 @@
-SUMMER CREW CYPRUS — סטטוס (5 ביולי 2026)
+SUMMER CREW CYPRUS — סטטוס (23 ביולי 2026)
 ================================================================
 
 כלל עבודה: Cursor מדמה אמיתי לוי — לא פונה לאף אדם. רק בונה מוצר.
@@ -9,25 +9,23 @@ SUMMER CREW CYPRUS — סטטוס (5 ביולי 2026)
 אתר: summer-crew-cyprus.web.app (טופס → מייל)
 GitHub: github.com/amitailevi/summer-crew-cyprus
 Gmail: summercrewcyprus@gmail.com
+פייסבוק: פרופיל + פוסטים + pin
+מודעות: ADS-READY-GO.txt (מחכה ל-GO)
 
-פייסבוק (Cowork):
-  ✅ קאבר, לוגו, השכלה, ביו, קשר (מייל+אתר)
-  ✅ פוסטים 1–5 טקסט + Messenger APPLY
-  ✅ "ריקים" = עדכוני קאבר/פרופיל (לא ניתן למחוק מ-FB — לא מזיק)
-  ✅ פוסט מוצמד: Real talk (מתאים לגיוס)
-  ⬜ תמונות לפוסטים (אופציונלי — אחר כך)
+✅ ספרינט נוכחות (חדש)
+----------------------
+  • cowork/SPRINT-7DAY.txt — מסלול מהיר לנוכחות→Ads
+  • cowork/CONTENT-14DAY-PASTE.txt — 14 פוסטים + Stories/Reel/קבוצות
+  • cowork/INSTAGRAM-SETUP.txt — IG bio + שבוע 1
+  • cowork/DO-NOW-15MIN.txt — מה אמיתי עושה עכשיו
+  • תמונות: Desktop/.../marketing/posts/ (01–06)
 
-⏸️ ממתין
----------
-  • דומיין + hello@ (אשראי)
-  • SIM +357
-  • FormSubmit activate (מייל חד-פעמי — ראה CALENDAR-5MIN.txt)
-  • Google Calendar URL → config.js (ראה CALENDAR-5MIN.txt)
+⏸️ ממתין (Day 0)
+----------------
+  • FormSubmit activate
+  • Google Calendar URL → config.js → deploy
+  • תמונות על פוסטי FB
+  • Instagram מחובר לדף
   • מודעות — GO מאמיתי
 
-לילה אוטונומי (מחזור 2–8):
-  ✅ אינטגרציות · CI · מודעות GO-ready · איחוד מייל
-  ✅ Messenger reply מעודכן · npm run deploy/verify
-  ✅ MORNING-BRIEF · PRODUCT-READY מעודכן
-  ✅ טופס AJAX — pending/success/error · deploy נבדק live
-  ✅ scc-core.js + site.js · validation · URL/email guards
+פעולה הבאה: DO-NOW-15MIN.txt → Day 1 post

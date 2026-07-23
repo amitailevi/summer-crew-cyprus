@@ -1,0 +1,29 @@
+YOU — DO NOW (15 MIN) THEN WE KEEP GOING
+=========================================
+
+Open these in order:
+
+1) FORM — https://summer-crew-cyprus.web.app#apply
+   Submit a real test → Gmail summercrewcyprus@gmail.com → click Activate Form
+
+2) CALENDAR — https://calendar.google.com (same Gmail)
+   Appointment schedules → 20 min · Wed+Thu 14:00–18:00
+   Copy booking URL → paste in:
+   /Users/levi/cyprus-recruitment/docs/config.js
+   field: GOOGLE_CALENDAR_EMBED
+   Then Terminal:
+   cd /Users/levi/cyprus-recruitment && npm run deploy
+
+3) FB IMAGES — drag from:
+   ~/Desktop/Summer-Crew-Cyprus-COWORK/marketing/posts/
+   Map: cowork/FB-IMAGES-MAP.txt
+
+4) TODAY'S POST — paste Day 1 from:
+   cowork/CONTENT-14DAY-PASTE.txt
+   + image 01-post-youth-fun.png
+
+5) MESSENGER — saved reply from:
+   cowork/texts/MESSENGER-SAVED-REPLY-ENGLISH.txt
+
+Full sprint: cowork/SPRINT-7DAY.txt
+Ads when ready: facebook/ADS-READY-GO.txt — wait for your GO

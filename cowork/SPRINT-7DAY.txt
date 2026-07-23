@@ -1,0 +1,31 @@
+SUMMER CREW CYPRUS — FAST SPRINT (7 DAYS → ADS)
+================================================
+Goal: presence + working funnel → GO paid ads
+Language: English on public channels
+Brand: Learn. Lead. Earn. · JOB not vacation
+
+── DAY 0 (TODAY — YOU, 15 MIN) ──
+[ ] 1. Gmail summercrewcyprus@gmail.com → Activate FormSubmit
+[ ] 2. Calendar Appointment (Wed/Thu 14–18, 20 min) → paste URL in docs/config.js → npm run deploy
+[ ] 3. FB: attach images to posts (see FB-IMAGES-MAP / Desktop marketing/posts/)
+[ ] 4. Create Instagram account (or convert) linked to FB Page — same bio/link
+
+── DAYS 1–7 — POST 1×/DAY + 2 STORIES ──
+Full copy: cowork/CONTENT-14DAY-PASTE.txt (use Days 1–7 first; 8–14 optional)
+Images: Desktop/Summer-Crew-Cyprus-COWORK/marketing/posts/
+
+── AFTER DAY 5 — SOFT SHARE ──
+[ ] Pin updated APPLY post
+[ ] Messenger saved reply live (cowork/texts/MESSENGER-SAVED-REPLY-ENGLISH.txt)
+[ ] Share page once in 1–2 Cyprus groups (template in CONTENT file — no spam)
+
+── DAY 7 — GO ADS ──
+Only if: form works + calendar OR messenger reply works
+Budget: €20/day × 5–7 days — facebook/ADS-READY-GO.txt
+Say: GO
+
+── DO NOT ──
+❌ Paid ads before Day 0 done
+❌ Israeli Facebook pages
+❌ Outbound cold DMs to strangers
+❌ "Vacation / holiday" framing
